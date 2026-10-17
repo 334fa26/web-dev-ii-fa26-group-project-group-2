@@ -15,60 +15,114 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title></title>
       <link href="styles.css" rel="stylesheet" />
-
    </head>
 
    <body>
       <header>
          <nav>
-            <!--logo -->
-            <img src="SweetCloverLogo.png" alt= "Sweet Clover Bakery Logo">
+           
+             <!--logo -->
+               <img class="scLogo" src="SweetCloverLogo.png" alt= "Sweet Clover Bakery Logo">
+            
+             
+               <!-- Business Name header, code from: https://share.google/aimode/2FZoVvtYfwHOFoLVv -->
+            <h3 class="subtitle"> <span class="title">Sweet Clover Bakery </span> 
+               Neighborhood Bakery
+            </h3>
+            
             <ul>
-               <li>Our Story</li>
-               <li>Menu</li>
-               <li>Custom Orders</li>
+               <!-- pages -->
+               <li><a href="index.html">Our Story</a></li>
+               <li><a href="Menu.html">Menu</a></li>
+               <li><a href="Custom.html">Custom Orders</a></li>
             </ul>
+            
+            <!--Start an Order button, arrow unicode from W3Schools-->
+            <button id="startOrder" type="button">Start An Order &#8594;</button>
          </nav>
       </header>
 
-      <article>
-             
-      </article>
+      <!--Start of informational content -->
+      <div>
+            <br> <p>This is filler text and filler space. <br>
+            The heading of the page goes here.</p><br>
+      </div>
+      
+      <div>
+         <p> This is more filler text. This is the main content. There may or may not be more divs/articles per page.</p>
+      </div>
       
       <footer>
+      <!--expandible FAQ menu, code from w3Schools -->
+         <div id="FAQs">
+            <h3 class="yellowHeaders"> Good to Know</h3>
+            <h4 class="bigWhiteText">A few things you may be wondering.</h4>
+            <hr>
+            <br>
+            
+            <details>
+               <summary><strong>Do you offer gluten free options? &nbsp; +</strong></summary>
+               <p>We bake a rotating selection of flourless treats, but our kitchen handles wheat flour daily and is not certified gluten-free.</p>
+            </details>
+            <hr class="subtleLine">
+            
+            <details>
+               <summary><strong>How far ahead should I place a custom order? &nbsp; + </strong></summary>
+               <p>We recommend at least 7 days for celebration cakes and 3 days for pastry boxes. Larger events may require more notice.</p>
+            </details>
+            <hr class="subtleLine">
+            
+            <details>
+               <summary><strong>Do you deliver? &nbsp; +</strong></summary>
+               <p>Local delivery is available for custom orders over $75 within 8 miles. A delivery fee is calculated with your quote.</p>
+            </details>
+            <br>
+            <hr>
+         </div>
          
-        <h4>Good To Know</h4>
-         <h5>A few things you might be wondering.</h5>
-         
-         <!-- add collapsible FAQ menu here-->
-         
-         <!-- duplicate of nav menu heading with logo -->
-         <img src="SweetCloverLogo.png" alt= "Sweet Clover Bakery Logo" >
-         <h5>Sweet Clover</h5>
-         <h6>Neighborhood Bakery</h6>
-         <p>Small-batch breads, pastries, and celebration cakes, made by hand in the heart of the neighborhood.</p>
-         
-         <h6>Come By</h6>
-         <address>
-               218 Clover Lane <br>
-               Maplewood, OR 97035
-         </address>
-         
-         <h6>Bakery Hours</h6>
-         <p>Tue-Fri: 71m-3pm<br>
-            Sat-Sun: 8am-2pm<br>
-            Monday: Closed
-         </p>
-         
-         <!-- contact info -->
-         <h6>Say Hello</h6>
-         <p><a href="tel:+5035550147"></a></p>
-         <address>
-            <a href="mailto:sweetcloverbakery@gmail.com">sweetcloverbakery@gmail.com</a><br>
-            <img src="InstagramLogo.png" alt="instagram logo" >
-            <a href="https://instagram.com" target="_blank">@sweetcloverbakery</a>
-         </address>
-         
+   <!-- logo and name, blurb-->
+         <div id="contacDivParent">
+            <div class="contactDivChild">
+               <img id="bottomLogo" src="GreenLogo.png" alt= "Sweet Clover Bakery Logo" >
+
+              <h3 class="subtitle"> <span class="title">Sweet Clover Bakery </span> 
+                     Neighborhood Bakery
+                  </h3>
+               <p id="footerBlurb">Small-batch breads, pastries, and celebration <br>cakes, made by hand in the heart of the <br>neighborhood.</p>
+            </div>
+            
+      <!--normal footer information -->
+            <div class="contactDivChild">
+               <h6 id="firstYellowHeader">Come By</h6>
+              <address id="locationInfo">
+                     218 Clover Lane <br>
+                     Maplewood, OR 97035
+               </address>
+            </div>
+            <div class="contactDivChild">
+               <h6 class="yellowHeaders">Bakery Hours</h6>
+               <p class="info">Tue-Fri: 71m-3pm<br>
+                  Sat-Sun: 8am-2pm<br>
+                  Monday: Closed
+               </p>
+            </div>
+            
+            
+            <!-- contact info -->
+            <div class="contactDivChild">
+              <h6 class="yellowHeaders">Say Hello</h6>
+              <address id="contactLinks">
+                  <p class="info"><a href="tel:+5035550147">(503) 555-0147</a></p>
+                  <a href="mailto:sweetcloverbakery@gmail.com">sweetcloverbakery@gmail.com</a><br>
+                  <a href="https://instagram.com" target="_blank">Instagram: @sweetcloverbakery</a>
+               </address> 
+            </div>
+         </div>
+      
+         <hr>
+         <!-- unicodes from w3schools -->
+         <p id="trademark">&#169; 2025 Sweet Clover Bakery &#x25CF; Baked with care, always.</p>
+     
       </footer>
    </body>
 
