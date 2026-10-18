@@ -231,3 +231,167 @@ hr.subtleLine{
 .menuLink:hover {
    background-color: #24452c;
 }
+
+/* PAGE FOOTER STYLES*/
+ 
+footer{
+    background-color:rgb(42,70,56);
+}
+ 
+/*container for 4 smaller divs*/
+div#contactDivParent{
+   display: flex;
+   width: 100%;
+   gap: 40px;
+}
+ 
+ 
+/*small divs: */
+div.contactDivChild{
+   flex: 1;
+   padding: 16px;
+   text-align: left;
+}
+ 
+img#bottomLogo{
+   height:80px;
+   width: auto;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   float: left;
+}
+ 
+footer span.title{
+   font-family: 'Times New Roman', 'Times', serif;
+   font-size: 25px;
+   color: rgb(250, 244, 223);
+   display: block;
+   margin: 20px 0px 0px 0px;
+}
+ 
+footer h3.subtitle{
+   font-family: 'Raleway', 'Courier', monospace;
+   font-size: 16px;
+   color: rgb(250, 244, 223);
+   display: block;
+   padding-bottom:20px;
+   margin: 0px 0px 0px 16px;
+}
+ 
+p#footerBlurb{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color:rgb(147, 158, 145);
+   background-color:rgb(42,70,56);
+   float: left;
+   margin: 0px 0px 75px 16px;
+   padding-top: 0px;
+ 
+}
+ 
+ 
+/*yellow footer headers ("Come By" is spaced differently) */
+footer h6#firstYellowHeader{
+margin: 150px 0px 0px 16px;
+padding-bottom: 15px;
+font-size: 18px;
+font-family: 'Raleway', 'Courier', monospace;
+color: rgb(212, 178, 108);
+}
+h6.yellowHeaders, h3.yellowHeaders{
+margin: 100px 0px 0px 16px;
+padding:15px 0px;
+font-size: 18px;
+font-family: 'Raleway', 'Courier', monospace;
+color: rgb(212, 178, 108);
+}
+ 
+ 
+/*footer info styling */
+footer p.info{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color:rgb(147, 158, 145);
+   float: left;
+   margin: 0px 0px 20px 16px;
+}
+ 
+ 
+footer address#locationInfo{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color:rgb(147, 158, 145);
+   background-color:rgb(42,70,56);
+   margin:  0px 0px 20px 16px;
+   display: block;
+   float: left;
+}
+ 
+ 
+footer address#contactLinks :link{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(250, 244, 223);
+   background-color:rgb(42,70,56);
+   text-decoration: none;
+   margin: 0px 0px 10px 16px;
+   padding: 20px 115px 0px 0px;
+   display: inline-block;
+}
+footer address#contactLinks :hover{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color:rgbrgb(212, 178, 108);
+   background-color: rgb(42,70,56);
+   text-decoration: none;
+   margin: 0px 0px 20px 16px;
+   padding: 20px 700px 0px 0px;
+   display: inline-block;
+   float: left;
+}
+footer address#contactLinks :visited{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(147, 158, 145);
+   background-color: rgb(42,70,56);
+   text-decoration: none;
+   margin: 0px 0px 20px 16px;
+   padding: 20px 700px 0px 0px;
+   display: inline-block;
+   float: left;
+}
+ 
+p#trademark{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(250, 244, 223);
+   text-align: center;
+   font-size: 10px;
+   padding-bottom: 10px;
+}
+ 
+ 
+/* =============================================
+   Tablet and Desktop Styles: greater than 510px
+   =============================================
+*/
+@media only screen and (min-width:511px) {
+
+}
+ 
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width:641px) {
+
+}
+ 
+/* =============================================
+   Tablet and Desktop Styles: greater than 720px
+   =============================================
+*/
+@media only screen and (min-width: 721px) {
+}
+ 
+/* =============================================
+   Tablet and Desktop Styles: greater than 1020px
+   =============================================
+*/
+@media only screen and (min-width: 1021px) {
+ 
+    
+}
