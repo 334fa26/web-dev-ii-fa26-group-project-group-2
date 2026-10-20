@@ -28,6 +28,10 @@ nav{
       column-count: 2;
       column-fill: balance;
 }
+
+ul{
+   flex-grow: 3;
+}
  
 /*"menu, our story, custom orders" links*/
 ul li{
@@ -394,4 +398,5 @@ p#trademark{
 @media only screen and (min-width: 1021px) {
  
     
+
 }
