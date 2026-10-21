@@ -125,7 +125,9 @@ hr.subtleLine{
 }
 
 /* PAGE FOOTER STYLES*/
-
+#FAQs {
+   display: flex;
+}
 
 
 /* =============================================
