@@ -4,31 +4,120 @@
       <!--
          Project Description:
 
-         Author(s): 
-         Date:   
+         Author(s): Morgan Gray
+         Date:   10/17/2026
    
          Filename: index.html
-   
+      NOTES: FIX STYLESHEET/REPO TO LOWERCASE, ADD MAIN TAG, FIX HEADER AND FOOTER TWEAKING
       -->
       
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title></title>
       <link href="styles.css" rel="stylesheet" />
-
    </head>
 
    <body>
       <header>
-         
+         <nav>
+           
+             <!--logo -->
+               <img class="scLogo" src="sweetCloverLogo.png" alt= "Sweet Clover Bakery Logo">
+            
+             
+               <!-- Business Name header, code from: https://share.google/aimode/2FZoVvtYfwHOFoLVv -->
+            <h3 class="subtitle"> <span class="title">Sweet Clover Bakery </span> 
+               Neighborhood Bakery
+            </h3>
+            
+            <ul>
+               <!-- pages -->
+               <li><a href="index.html">Our Story</a></li>
+               <li><a href="Menu.html">Menu</a></li>
+               <li><a href="Custom.html">Custom Orders</a></li>
+            </ul>
+            
+            <!--Start an Order button, arrow unicode from W3Schools-->
+            <button id="startOrder" type="button">Start An Order &#8594;</button>
+         </nav>
       </header>
 
-      <article>
-             
-      </article>
-      
-      <footer>
+      <!--Start of informational content -->
+      <div>
          
+      </div>
+      <footer>
+      <!--expandible FAQ menu, code from w3Schools -->
+         <h3 class="yellowHeaders"> Good to Know</h3>
+         <div id="FAQs">
+            <h4 class="bigWhiteText">A few things you may be wondering.</h4>
+            <hr>
+            <br>
+            <div>
+            <details>
+               <summary><strong>Do you offer gluten free options? &nbsp; +</strong></summary>
+               <p>We bake a rotating selection of flourless treats, but our kitchen handles wheat flour daily and is not certified gluten-free.</p>
+            </details>
+            <hr class="subtleLine">
+            
+            <details>
+               <summary><strong>How far ahead should I place a custom order? &nbsp; + </strong></summary>
+               <p>We recommend at least 7 days for celebration cakes and 3 days for pastry boxes. Larger events may require more notice.</p>
+            </details>
+            <hr class="subtleLine">
+            
+            <details>
+               <summary><strong>Do you deliver? &nbsp; +</strong></summary>
+               <p>Local delivery is available for custom orders over $75 within 8 miles. A delivery fee is calculated with your quote.</p>
+            </details>
+            <br>
+            <hr>
+            </div>
+         </div>
+         
+   <!-- logo and name, blurb-->
+         <div id="contacDivParent">
+            <div class="contactDivChild">
+               <img id="bottomLogo" src="greenLogo.png" alt= "Sweet Clover Bakery Logo" >
+
+              <h3 class="subtitle"> <span class="title">Sweet Clover Bakery </span> 
+                     Neighborhood Bakery
+                  </h3>
+               <p id="footerBlurb">Small-batch breads, pastries, and celebration <br>cakes, made by hand in the heart of the <br>neighborhood.</p>
+            </div>
+            
+      <!--normal footer information -->
+            <div class="contactDivChild">
+               <h6 id="firstYellowHeader">Come By</h6>
+              <address id="locationInfo">
+                     218 Clover Lane <br>
+                     Maplewood, OR 97035
+               </address>
+            </div>
+            <div class="contactDivChild">
+               <h6 class="yellowHeaders">Bakery Hours</h6>
+               <p class="info">Tue-Fri: 7am-3pm<br>
+                  Sat-Sun: 8am-2pm<br>
+                  Monday: Closed
+               </p>
+            </div>
+            
+            
+            <!-- contact info -->
+            <div class="contactDivChild">
+              <h6 class="yellowHeaders">Say Hello</h6>
+              <address id="contactLinks">
+                  <p class="info"><a href="tel:+5035550147">(503) 555-0147</a></p>
+                  <a href="mailto:sweetcloverbakery@gmail.com">sweetcloverbakery@gmail.com</a><br>
+                  <a href="https://instagram.com" target="_blank">Instagram: @sweetcloverbakery</a>
+               </address> 
+            </div>
+         </div>
+      
+         <hr>
+         <!-- unicodes from w3schools -->
+         <p id="trademark">&#169; 2025 Sweet Clover Bakery &#x25CF; Baked with care, always.</p>
+     
       </footer>
    </body>
 

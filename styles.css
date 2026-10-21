@@ -1,35 +1,133 @@
 @charset "utf-8";
 
 /*
-   Project Name:
-   Author(s):
-   Date:
+   Project Name: Sweet Clover Bakery
+   Author(s): Anna, Cailyn, Morgan
+   Date:10-17-26
    Filename: styles.css
 
 */
 
 
-/* HTML and Body styles */
+/* HTML AND BODY STYLES */
+html {
+   background-color: rgb(250, 244, 233);
+}
 
 
+/* HEADER STYLES */
+header{
+   background:rgb(250, 244, 233);
+}
+
+/* NAVIGATION LIST STYLES */
+nav{
+      display: flex;
+      flex-direction: row;
+      background:rgb(250, 244, 233);
+      column-count: 2;
+      column-fill: balance;
+}
+
+ul{
+   flex-grow: 3;
+}
+ 
+/*"menu, our story, custom orders" links*/
+ul li{
+   list-style-type: none;
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   display: flex;
+   flex-direction: row;
+   float: right;
+   align-content: center;
+   flex-wrap: nowrap;
+}
+ 
+ 
+ul li a{
+   background:rgb(250, 244, 233);
+   padding: 14px 16px;
+   text-decoration: none;
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(81, 87, 81);
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content:stretch;
+   float: right;
+}
+ 
+/*puts title and subtitle aligned vertically */
+nav span.title{
+   font-family: 'Times New Roman', 'Times', serif;
+   font-size: 25px;
+   color: rgb(102, 120, 107);
+   display: block;
+}
+ 
+nav h3.subtitle{
+  font-family: 'Raleway', 'Courier', monospace;
+   font-size: 16px;
+   color: rgb(102, 120, 107);
+   display: block;
+   margin-left: 16px;
+}
+ 
+img.scLogo{
+   height: 80px;
+   width: auto;
+   margin: 0px;
+}
+ 
+/*Start an Order Button */
+button#startOrder{
+   background-color: rgb(102, 120, 107);
+   color: rgb(244, 239, 228);
+   border-radius: 35px;
+   border-color: rgb(250, 244, 233);
+   text-align: center;
+   height: 50px;
+   width: 150px;
+   display: block;
+   float: right;
+   cursor:pointer;
+}
 
 
-/* Header styles */
+/* ARTICLE OR DIV STYLES*/
+/*collabsible FAQ menu styling */
+h4.bigWhiteText{
+   font-size: 30px;
+   color: rgb(250, 244, 233);
+   margin: 0 0 20px 16px;
+}
+ 
+details > summary{
+   color:rgb(250, 244, 233);
+   list-style: none;
+   cursor: pointer;
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   padding-left: 16px;
+   font-size: 18px;
+ 
+}
+ 
+details{
+   color:rgb(250, 244, 233);
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   padding-left: 16px;
+   text-align: left;
+}
+ 
+hr.subtleLine{
+   color:rgb(102, 120, 107);
+}
 
-
-
-
-/* Navigation list styles */
-
-
-
-/* Article Styles */
-
-
-
-/* Page footer styles */
-
-
+/* PAGE FOOTER STYLES*/
+div#FAQs {
+   display: flex;
+}
 
 
 /* =============================================
@@ -38,6 +136,7 @@
 */
 @media only screen and (min-width:511px) {
    
+      
    
 }
 
@@ -65,4 +164,241 @@
 @media only screen and (min-width: 1021px) {
 
     
+}
+/* MENU PAGE STYLES */
+
+#bakeryMenu {
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 30px 20px;
+}
+
+#menuIntro {
+   text-align: center;
+   margin-bottom: 35px;
+}
+
+#bakeryMenu h1,
+#bakeryMenu h2 {
+   color: #315b3b;
+}
+
+.menuCategory {
+   margin-bottom: 40px;
+}
+
+.menuCategory h2 {
+   border-bottom: 2px solid #d5b96b;
+   padding-bottom: 10px;
+}
+
+.menuCategory table {
+   width: 100%;
+   border-collapse: collapse;
+   background-color: #fffdf8;
+}
+
+.menuCategory th,
+.menuCategory td {
+   padding: 12px;
+   text-align: left;
+   border-bottom: 1px solid #e5ddce;
+}
+
+.menuCategory th {
+   background-color: #315b3b;
+   color: white;
+}
+
+.menuCategory tbody tr:nth-child(even) {
+   background-color: #f5efe3;
+}
+
+.menuCategory td:last-child,
+.menuCategory th:last-child {
+   white-space: nowrap;
+}
+
+#menuOrder {
+   text-align: center;
+   padding: 25px 0;
+}
+
+.menuLink {
+   display: inline-block;
+   background-color: #315b3b;
+   color: white;
+   padding: 12px 20px;
+   border-radius: 5px;
+   text-decoration: none;
+   margin-top: 10px;
+}
+
+.menuLink:hover {
+   background-color: #24452c;
+}
+
+/* PAGE FOOTER STYLES*/
+ 
+footer{
+    background-color:rgb(42,70,56);
+}
+ 
+/*container for 4 smaller divs*/
+div#contactDivParent{
+   display: flex;
+   width: 100%;
+   gap: 40px;
+}
+ 
+ 
+/*small divs: */
+div.contactDivChild{
+   flex: 1;
+   padding: 16px;
+   text-align: left;
+}
+ 
+img#bottomLogo{
+   height:80px;
+   width: auto;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   float: left;
+}
+ 
+footer span.title{
+   font-family: 'Times New Roman', 'Times', serif;
+   font-size: 25px;
+   color: rgb(250, 244, 223);
+   display: block;
+   margin: 20px 0px 0px 0px;
+}
+ 
+footer h3.subtitle{
+   font-family: 'Raleway', 'Courier', monospace;
+   font-size: 16px;
+   color: rgb(250, 244, 223);
+   display: block;
+   padding-bottom:20px;
+   margin: 0px 0px 0px 16px;
+}
+ 
+p#footerBlurb{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color:rgb(147, 158, 145);
+   background-color:rgb(42,70,56);
+   float: left;
+   margin: 0px 0px 75px 16px;
+   padding-top: 0px;
+ 
+}
+ 
+ 
+/*yellow footer headers ("Come By" is spaced differently) */
+footer h6#firstYellowHeader{
+margin: 150px 0px 0px 16px;
+padding-bottom: 15px;
+font-size: 18px;
+font-family: 'Raleway', 'Courier', monospace;
+color: rgb(212, 178, 108);
+}
+h6.yellowHeaders, h3.yellowHeaders{
+margin: 100px 0px 0px 16px;
+padding:15px 0px;
+font-size: 18px;
+font-family: 'Raleway', 'Courier', monospace;
+color: rgb(212, 178, 108);
+}
+ 
+ 
+/*footer info styling */
+footer p.info{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color:rgb(147, 158, 145);
+   float: left;
+   margin: 0px 0px 20px 16px;
+}
+ 
+ 
+footer address#locationInfo{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color:rgb(147, 158, 145);
+   background-color:rgb(42,70,56);
+   margin:  0px 0px 20px 16px;
+   display: block;
+   float: left;
+}
+ 
+ 
+footer address#contactLinks :link{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(250, 244, 223);
+   background-color:rgb(42,70,56);
+   text-decoration: none;
+   margin: 0px 0px 10px 16px;
+   padding: 20px 115px 0px 0px;
+   display: inline-block;
+}
+footer address#contactLinks :hover{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color:rgbrgb(212, 178, 108);
+   background-color: rgb(42,70,56);
+   text-decoration: none;
+   margin: 0px 0px 20px 16px;
+   padding: 20px 700px 0px 0px;
+   display: inline-block;
+   float: left;
+}
+footer address#contactLinks :visited{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(147, 158, 145);
+   background-color: rgb(42,70,56);
+   text-decoration: none;
+   margin: 0px 0px 20px 16px;
+   padding: 20px 700px 0px 0px;
+   display: inline-block;
+   float: left;
+}
+ 
+p#trademark{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(250, 244, 223);
+   text-align: center;
+   font-size: 10px;
+   padding-bottom: 10px;
+}
+ 
+ 
+/* =============================================
+   Tablet and Desktop Styles: greater than 510px
+   =============================================
+*/
+@media only screen and (min-width:511px) {
+
+}
+ 
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width:641px) {
+
+}
+ 
+/* =============================================
+   Tablet and Desktop Styles: greater than 720px
+   =============================================
+*/
+@media only screen and (min-width: 721px) {
+}
+ 
+/* =============================================
+   Tablet and Desktop Styles: greater than 1020px
+   =============================================
+*/
+@media only screen and (min-width: 1021px) {
+ 
+    
+
 }
