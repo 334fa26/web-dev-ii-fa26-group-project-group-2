@@ -125,7 +125,7 @@ hr.subtleLine{
 }
 
 /* PAGE FOOTER STYLES*/
-#FAQs {
+div#FAQs {
    display: flex;
 }
 
