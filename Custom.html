@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,39 +11,589 @@
       -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title></title>
+<title>Custom Cakes & Desserts | Sweet Clover Bakery</title>
 <link href="styles.css" rel="stylesheet" />
 </head>
  
-   <body>
+<body>
 <header>
 <nav>
 <!--logo -->
-<img class="scLogo" src="SweetCloverLogo.png" alt= "Sweet Clover Bakery Logo">
+<img class="scLogo" src="SweetCloverLogo.png" alt="Sweet Clover Bakery Logo">
 
 <!-- Business Name header, code from: https://share.google/aimode/2FZoVvtYfwHOFoLVv -->
-<h3 class="subtitle"> <span class="title">Sweet Clover Bakery </span> 
-               Neighborhood Bakery
+<h3 class="subtitle">
+   <span class="title">Sweet Clover Bakery </span>
+   Neighborhood Bakery
 </h3>
+
 <ul>
 <!-- pages -->
 <li><a href="index.html">Our Story</a></li>
 <li><a href="Menu.html">Menu</a></li>
 <li><a href="Custom.html">Custom Orders</a></li>
 </ul>
+
 <!--Start an Order button, arrow unicode from W3Schools-->
 <button id="startOrder" type="button">Start An Order &#8594;</button>
 </nav>
 </header>
- 
-      <!--Start of informational content -->
-<div>
-<br> <p>This is filler text and filler space. <br>
-            The heading of the page goes here.</p><br>
-</div>
-<div>
-<p> This is more filler text. This is the main content. There may or may not be more divs/articles per page.</p>
-</div>
+
+<!-- START OF CUSTOM ORDERS CONTENT -->
+<main id="customOrders">
+
+   <!-- Custom Orders Introduction -->
+   <section id="customHero">
+      <div class="customHeroText">
+         <p class="customEyebrow">MADE FOR YOUR MOMENTS</p>
+
+         <h1>Custom Cakes &amp; Desserts</h1>
+
+         <p class="customTagline">
+            Baked fresh. Made with care.
+         </p>
+
+         <p>
+            Whether you're celebrating a birthday, graduation, wedding,
+            anniversary, or just because, our custom desserts are made
+            to fit your occasion.
+         </p>
+
+         <a class="customButton" href="#customOrderForm">
+            Request a Custom Order
+         </a>
+      </div>
+
+      <div class="customHeroImage">
+         <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+            alt="Decorated celebration cake ready for a special occasion"
+         >
+      </div>
+   </section>
+
+   <!-- Celebration Cakes -->
+   <section class="customSection" id="celebrationCakes">
+      <div class="customSectionHeading">
+         <p class="customEyebrow">MADE JUST FOR YOU</p>
+
+         <h2>Celebration Cakes</h2>
+
+         <p>
+            Make your special day a little sweeter with a cake designed
+            for your celebration. Choose your size, flavor, frosting,
+            and design.
+         </p>
+      </div>
+
+      <div class="customFeatureGrid">
+
+         <article class="customFeature">
+            <img
+               src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+               alt="Layered celebration cake with decorative frosting"
+               loading="lazy"
+            >
+
+            <div class="customFeatureContent">
+               <h3>Choose Your Size</h3>
+
+               <ul class="customOptionList">
+                  <li>6-inch cake</li>
+                  <li>8-inch cake</li>
+                  <li>10-inch cake</li>
+                  <li>Sheet cakes</li>
+               </ul>
+            </div>
+         </article>
+
+         <article class="customFeature">
+            <img
+               src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+               alt="Decorated cake with carefully finished frosting"
+               loading="lazy"
+            >
+
+            <div class="customFeatureContent">
+               <h3>Pick Your Flavor</h3>
+
+               <ul class="customOptionList">
+                  <li>Vanilla</li>
+                  <li>Chocolate</li>
+                  <li>Red velvet</li>
+                  <li>Lemon</li>
+                  <li>Strawberry</li>
+                  <li>Marble</li>
+               </ul>
+            </div>
+         </article>
+
+         <article class="customFeature">
+            <img
+               src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&amp;fit=crop&amp;w=700&amp;q=85"
+               alt="Special occasion cake decorated with frosting"
+               loading="lazy"
+            >
+
+            <div class="customFeatureContent">
+               <h3>Choose Your Frosting</h3>
+
+               <ul class="customOptionList">
+                  <li>Vanilla buttercream</li>
+                  <li>Chocolate buttercream</li>
+                  <li>Cream cheese</li>
+                  <li>Strawberry buttercream</li>
+                  <li>Lemon buttercream</li>
+               </ul>
+            </div>
+         </article>
+
+      </div>
+   </section>
+
+   <!-- Custom Cookies and Dessert Boxes -->
+   <section class="customSection customAltSection" id="customTreats">
+      <div class="customSectionHeading">
+         <p class="customEyebrow">SOMETHING SWEET FOR EVERY OCCASION</p>
+
+         <h2>More Ways to Celebrate</h2>
+
+         <p>
+            From personalized cookies to dessert boxes filled with
+            favorites, we can help make your gathering extra special.
+         </p>
+      </div>
+
+      <div class="customTreatGrid">
+
+         <article class="customTreatCard">
+            <img
+               src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+               alt="Freshly baked cookies arranged together"
+               loading="lazy"
+            >
+
+            <div class="customTreatText">
+               <h3>Custom Cookies</h3>
+
+               <p>
+                  Personalized cookies for celebrations big and small.
+               </p>
+
+               <ul class="customOptionList">
+                  <li>Decorated sugar cookies</li>
+                  <li>Logo cookies</li>
+                  <li>Graduation cookies</li>
+                  <li>Birthday cookies</li>
+                  <li>Holiday cookies</li>
+                  <li>Baby shower cookies</li>
+               </ul>
+            </div>
+         </article>
+
+         <article class="customTreatCard">
+            <img
+               src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+               alt="Assorted sweet treats prepared for serving"
+               loading="lazy"
+            >
+
+            <div class="customTreatText">
+               <h3>Dessert Boxes</h3>
+
+               <p>
+                  A variety of treats to share with friends, family,
+                  and guests.
+               </p>
+
+               <ul class="customOptionList">
+                  <li>Cookies</li>
+                  <li>Brownies</li>
+                  <li>Mini cupcakes</li>
+                  <li>Dessert bars</li>
+                  <li>Seasonal treats</li>
+               </ul>
+            </div>
+         </article>
+
+      </div>
+   </section>
+
+   <!-- Custom Order Process -->
+   <section class="customSection" id="customProcess">
+      <div class="customSectionHeading">
+         <p class="customEyebrow">SIMPLE AS CAN BE</p>
+
+         <h2>How Custom Ordering Works</h2>
+
+         <p>
+            We'll help you plan something sweet for your special day.
+         </p>
+      </div>
+
+      <div class="customSteps">
+
+         <article class="customStep">
+            <span class="customStepNumber">01</span>
+
+            <h3>Tell Us What You Need</h3>
+
+            <p>
+               Complete the custom-order request form with your ideas
+               and event details.
+            </p>
+         </article>
+
+         <article class="customStep">
+            <span class="customStepNumber">02</span>
+
+            <h3>We'll Contact You</h3>
+
+            <p>
+               We'll discuss availability, pricing, and the details
+               of your request.
+            </p>
+         </article>
+
+         <article class="customStep">
+            <span class="customStepNumber">03</span>
+
+            <h3>We Bake</h3>
+
+            <p>
+               Once the details are confirmed, we'll prepare your
+               order fresh for your event.
+            </p>
+         </article>
+
+         <article class="customStep">
+            <span class="customStepNumber">04</span>
+
+            <h3>Pick It Up</h3>
+
+            <p>
+               Pick up your order at the bakery on your scheduled date.
+            </p>
+         </article>
+
+      </div>
+
+      <p class="customNotice">
+         <strong>Please plan ahead:</strong> Custom orders should be
+         requested at least 7 days in advance. Larger or more detailed
+         orders may require additional notice. Submitting a request
+         does not confirm your order.
+      </p>
+   </section>
+
+   <!-- Custom Order Request Form -->
+   <section class="customSection customAltSection" id="customOrderForm">
+      <div class="customSectionHeading">
+         <p class="customEyebrow">LET'S MAKE SOMETHING SWEET</p>
+
+         <h2>Request a Custom Order</h2>
+
+         <p>
+            Tell us about your celebration and what you have in mind.
+            Our team can follow up to discuss availability and pricing.
+         </p>
+      </div>
+
+      <form
+         id="customRequestForm"
+         class="customForm"
+         action="#"
+         method="post"
+      >
+
+         <!-- Contact Information -->
+         <fieldset>
+            <legend>Your Contact Information</legend>
+
+            <div class="customFormGrid">
+
+               <div class="customFormField">
+                  <label for="customFirstName">First Name *</label>
+                  <input
+                     type="text"
+                     id="customFirstName"
+                     name="firstName"
+                     autocomplete="given-name"
+                     required
+                  >
+               </div>
+
+               <div class="customFormField">
+                  <label for="customLastName">Last Name *</label>
+                  <input
+                     type="text"
+                     id="customLastName"
+                     name="lastName"
+                     autocomplete="family-name"
+                     required
+                  >
+               </div>
+
+               <div class="customFormField">
+                  <label for="customEmail">Email Address *</label>
+                  <input
+                     type="email"
+                     id="customEmail"
+                     name="email"
+                     autocomplete="email"
+                     required
+                  >
+               </div>
+
+               <div class="customFormField">
+                  <label for="customPhone">Phone Number</label>
+                  <input
+                     type="tel"
+                     id="customPhone"
+                     name="phone"
+                     autocomplete="tel"
+                  >
+               </div>
+
+               <div class="customFormField">
+                  <label for="customContactMethod">
+                     Preferred Contact Method *
+                  </label>
+
+                  <select
+                     id="customContactMethod"
+                     name="preferredContact"
+                     required
+                  >
+                     <option value="">Choose a method</option>
+                     <option value="email">Email</option>
+                     <option value="phone">Phone</option>
+                  </select>
+               </div>
+
+               <div class="customFormField">
+                  <label for="customReason">Reason for Contact *</label>
+
+                  <select id="customReason" name="reason" required>
+                     <option value="">Choose an occasion</option>
+                     <option value="birthday">Birthday</option>
+                     <option value="graduation">Graduation</option>
+                     <option value="wedding">Wedding</option>
+                     <option value="anniversary">Anniversary</option>
+                     <option value="baby-shower">Baby shower</option>
+                     <option value="holiday">Holiday</option>
+                     <option value="other">Other</option>
+                  </select>
+               </div>
+
+            </div>
+         </fieldset>
+
+         <!-- Event Information -->
+         <fieldset>
+            <legend>Your Event Details</legend>
+
+            <div class="customFormGrid">
+
+               <div class="customFormField">
+                  <label for="customEventDate">Event Date *</label>
+                  <input
+                     type="date"
+                     id="customEventDate"
+                     name="eventDate"
+                     required
+                  >
+               </div>
+
+               <div class="customFormField">
+                  <label for="customPickupDate">Preferred Pickup Date *</label>
+                  <input
+                     type="date"
+                     id="customPickupDate"
+                     name="pickupDate"
+                     required
+                  >
+               </div>
+
+               <div class="customFormField">
+                  <label for="customGuests">Number of Guests</label>
+                  <input
+                     type="number"
+                     id="customGuests"
+                     name="numberOfGuests"
+                     min="1"
+                     step="1"
+                  >
+               </div>
+
+               <div class="customFormField">
+                  <label for="customProduct">Product or Service *</label>
+
+                  <select id="customProduct" name="product" required>
+                     <option value="">Choose a product</option>
+                     <option value="celebration-cake">Celebration cake</option>
+                     <option value="wedding-cake">Wedding cake</option>
+                     <option value="custom-cookies">Custom cookies</option>
+                     <option value="dessert-box">Dessert box</option>
+                     <option value="dessert-table">Dessert table</option>
+                     <option value="other">Other</option>
+                  </select>
+               </div>
+
+            </div>
+         </fieldset>
+
+         <!-- Cake Information -->
+         <fieldset>
+            <legend>Cake Details</legend>
+
+            <p class="customFieldHint">
+               Complete these fields if you're requesting a cake.
+               For other desserts, you can leave them blank.
+            </p>
+
+            <div class="customFormGrid">
+
+               <div class="customFormField">
+                  <label for="customFlavor">Cake Flavor</label>
+
+                  <select id="customFlavor" name="cakeFlavor">
+                     <option value="">Choose a flavor</option>
+                     <option value="vanilla">Vanilla</option>
+                     <option value="chocolate">Chocolate</option>
+                     <option value="red-velvet">Red velvet</option>
+                     <option value="lemon">Lemon</option>
+                     <option value="strawberry">Strawberry</option>
+                     <option value="marble">Marble</option>
+                     <option value="custom">Discuss a custom flavor</option>
+                  </select>
+               </div>
+
+               <div class="customFormField">
+                  <label for="customFrosting">Frosting</label>
+
+                  <select id="customFrosting" name="frosting">
+                     <option value="">Choose frosting</option>
+                     <option value="vanilla-buttercream">Vanilla buttercream</option>
+                     <option value="chocolate-buttercream">Chocolate buttercream</option>
+                     <option value="cream-cheese">Cream cheese</option>
+                     <option value="strawberry-buttercream">Strawberry buttercream</option>
+                     <option value="lemon-buttercream">Lemon buttercream</option>
+                  </select>
+               </div>
+
+               <div class="customFormField">
+                  <label for="customCakeSize">Cake Size</label>
+
+                  <select id="customCakeSize" name="cakeSize">
+                     <option value="">Choose a size</option>
+                     <option value="6-inch">6-inch</option>
+                     <option value="8-inch">8-inch</option>
+                     <option value="10-inch">10-inch</option>
+                     <option value="sheet-cake">Sheet cake</option>
+                     <option value="discuss">Help me choose</option>
+                  </select>
+               </div>
+
+               <div class="customFormField customFullWidth">
+                  <label for="customDesign">Design or Theme</label>
+
+                  <input
+                     type="text"
+                     id="customDesign"
+                     name="designTheme"
+                     placeholder="Example: floral, colors, or celebration theme"
+                  >
+               </div>
+
+            </div>
+         </fieldset>
+
+         <!-- Additional Details -->
+         <fieldset>
+            <legend>Tell Us More</legend>
+
+            <div class="customFormField">
+               <label for="customMessage">
+                  Additional Details or Message *
+               </label>
+
+               <textarea
+                  id="customMessage"
+                  name="message"
+                  rows="5"
+                  placeholder="Describe your order, design ideas, quantity, or any questions."
+                  required
+               ></textarea>
+            </div>
+
+            <p class="customFieldHint">
+               Please tell us about any dietary needs or ingredient
+               concerns so we can discuss available options. Our kitchen
+               handles wheat and other allergens and cannot guarantee
+               an allergen-free environment.
+            </p>
+         </fieldset>
+
+         <!-- Form Buttons -->
+         <div class="customFormActions">
+            <button class="customSubmitButton" type="submit">
+               Submit Request
+            </button>
+
+            <button class="customResetButton" type="reset">
+               Clear Form
+            </button>
+         </div>
+
+         <p class="customFormDisclaimer">
+            This form is a design demonstration. It will not send your
+            information until a form-processing service is connected.
+            Your order is not confirmed until the bakery contacts you.
+         </p>
+
+      </form>
+   </section>
+
+</main>
+<!-- END OF CUSTOM ORDERS CONTENT -->
+
+<script>
+   // Allow the existing Start An Order button to scroll to the request form.
+   const startOrderButton = document.getElementById("startOrder");
+
+   if (startOrderButton) {
+      startOrderButton.addEventListener("click", function () {
+         document.getElementById("customOrderForm").scrollIntoView({
+            behavior: "smooth"
+         });
+      });
+   }
+
+   // Prevent selecting event and pickup dates in the past.
+   const today = new Date();
+   const localToday = new Date(
+      today.getTime() - today.getTimezoneOffset() * 60000
+   ).toISOString().split("T")[0];
+
+   const eventDateInput = document.getElementById("customEventDate");
+   const pickupDateInput = document.getElementById("customPickupDate");
+
+   eventDateInput.min = localToday;
+   pickupDateInput.min = localToday;
+
+   eventDateInput.addEventListener("change", function () {
+      pickupDateInput.min = this.value || localToday;
+
+      if (
+         pickupDateInput.value &&
+         pickupDateInput.value < pickupDateInput.min
+      ) {
+         pickupDateInput.value = "";
+      }
+   });
+</script>
+
 <footer>
 <!--expandible FAQ menu, code from w3Schools -->
 <div id="FAQs">
@@ -50,46 +601,57 @@
 <h4 class="bigWhiteText">A few things you may be wondering.</h4>
 <hr>
 <br>
+
 <details>
 <summary><strong>Do you offer gluten free options? &nbsp; +</strong></summary>
 <p>We bake a rotating selection of flourless treats, but our kitchen handles wheat flour daily and is not certified gluten-free.</p>
 </details>
+
 <hr class="subtleLine">
+
 <details>
 <summary><strong>How far ahead should I place a custom order? &nbsp; + </strong></summary>
 <p>We recommend at least 7 days for celebration cakes and 3 days for pastry boxes. Larger events may require more notice.</p>
 </details>
+
 <hr class="subtleLine">
+
 <details>
 <summary><strong>Do you deliver? &nbsp; +</strong></summary>
 <p>Local delivery is available for custom orders over $75 within 8 miles. A delivery fee is calculated with your quote.</p>
 </details>
+
 <br>
 <hr>
 </div>
+
 <!-- logo and name, blurb-->
 <div id="contacDivParent">
 <div class="contactDivChild">
-<img id="bottomLogo" src="GreenLogo.png" alt= "Sweet Clover Bakery Logo" >
- 
-              <h3 class="subtitle"> <span class="title">Sweet Clover Bakery </span> 
-                     Neighborhood Bakery
+<img id="bottomLogo" src="GreenLogo.png" alt="Sweet Clover Bakery Logo">
+
+<h3 class="subtitle">
+   <span class="title">Sweet Clover Bakery </span>
+   Neighborhood Bakery
 </h3>
+
 <p id="footerBlurb">Small-batch breads, pastries, and celebration <br>cakes, made by hand in the heart of the <br>neighborhood.</p>
 </div>
+
 <!--normal footer information -->
 <div class="contactDivChild">
 <h6 id="firstYellowHeader">Come By</h6>
 <address id="locationInfo">
-                     218 Clover Lane <br>
-                     Maplewood, OR 97035
+   218 Clover Lane <br>
+   Maplewood, OR 97035
 </address>
 </div>
+
 <div class="contactDivChild">
 <h6 class="yellowHeaders">Bakery Hours</h6>
 <p class="info">Tue-Fri: 71m-3pm<br>
-                  Sat-Sun: 8am-2pm<br>
-                  Monday: Closed
+   Sat-Sun: 8am-2pm<br>
+   Monday: Closed
 </p>
 </div>
 
@@ -100,13 +662,14 @@
 <p class="info"><a href="tel:+5035550147">(503) 555-0147</a></p>
 <a href="mailto:sweetcloverbakery@gmail.com">sweetcloverbakery@gmail.com</a><br>
 <a href="https://instagram.com" target="_blank">Instagram: @sweetcloverbakery</a>
-</address> 
+</address>
 </div>
 </div>
+
 <hr>
+
 <!-- unicodes from w3schools -->
 <p id="trademark">&#169; 2025 Sweet Clover Bakery &#x25CF; Baked with care, always.</p>
 </footer>
 </body>
- 
 </html>
