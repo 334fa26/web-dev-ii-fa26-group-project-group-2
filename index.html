@@ -8,12 +8,12 @@
          Date:   10/17/2026
    
          Filename: index.html
-      NOTES: FIX STYLESHEET/REPO TO LOWERCASE, ADD MAIN TAG, FIX HEADER AND FOOTER TWEAKING
+      NOTES: FIX STYLESHEET/REPO TO LOWERCASE, FIX HEADER AND FOOTER TWEAKING
       -->
       
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title></title>
+      <title>Home - Sweet Clover Bakery</title>
       <link href="styles.css" rel="stylesheet" />
    </head>
 
@@ -26,9 +26,9 @@
             
              
                <!-- Business Name header, code from: https://share.google/aimode/2FZoVvtYfwHOFoLVv -->
-            <h3 class="subtitle"> <span class="title">Sweet Clover Bakery </span> 
+            <p class="smallSubtitle"> <span class="smallTitle">Sweet Clover Bakery </span> 
                Neighborhood Bakery
-            </h3>
+            </p>
             
             <ul>
                <!-- pages -->
@@ -42,82 +42,144 @@
          </nav>
       </header>
 
-      <!--Start of informational content -->
+      <main>
+         <!--Banner of homepage with background image and buttons to other pages -->
+         <div id="indexBanner">
+            <h1 class="yellowHeaders">Made Fresh in Maryville</h1>
+            <h2 id= "indexHeaderOne">Good things</h2>
+            <h2 id="indexHeaderTwo"><em>rise slowly.</em></h2>
+            
+            <p>Thoughtful bread, joyful pastries, and cakes for celebrating - all made from scratch with local ingredients and plenty of time</p>
+             
+            <button id="menuButton" type="button">Explore today's menu &#8594;</button>
+            <button id="customButton" type="button">Plan something special</button>
+         </div>
+         
+         <!-- "Our Story" part of homepage -->
+         <div id="indexOurStory">
+            <!--insert image here -->
+            <h1 class="smallHeader"> Our Story</h1>
+            <h3 class="mediumHeaderDark"> A neighborhood bakery with a little more time.</h3>
+            
+            <p>Sweet Clover started with one sourdough starter, a tiny home oven, and a belief
+               that everyday food can still feel special. We bake the old-fashioned way: slowly,
+               seasonally, and always from scratch.</p>
+
+            <p>Today, our sunny corner bakery is a gathering place for morning regulars, 
+               after-school cookie runs, and celebrations of every size.</p>
+            
+            <p>see what's baking &#8594;</p>
+         </div>
+         
+         <!--meet the team -->
+         <div id=indexMeetTheTeam>
+            <h1 class="smallHeader">The people behind the pastry</h1>
+            <h3 class="mediumHeaderDark">Meet our small but mighty team.</h3>
+            <p>Flour-dusted, early-rising, and endlessly curious
+            — we’re a close-knit crew who really loves feeding people.</p>
+            
+            <!--insert image of Mara here -->
+            <h4>Mara Ellison</h4>
+            <h1 class="smallHeader">Founder and Head Baker</h1>
+            
+            <p>A lifelong baker with a soft spot for laminated dough and perfect peaches.</p>
+            
+            <!-- insert image of Theo here -->
+            <h4>Theo Park</h4>
+            <h1 class="smallHeader">Bread Lead</h1>
+            
+            <p>Keeper of the starter and believer in long ferments, dark crusts, and second coffee.</p>
+         </div>
+         
+         <!--Yellow info section INSERT ICONS STILL -->
+         <div id="indexInfoSection">
+            <h5>218 Clover Lane</h5>
+            <p>Maplewood, Oregon</p>
+            <h5>Tuesday through Sunday</h5>
+            <p>Opening at 7am weekdays, 8am weekends</p>
+            <h5>(503) 555-0147</h5>
+            <p>Give us a ring - we're friendly</p>
+         </div>
+         
+      </main>
       <div>
          
       </div>
       <footer>
       <!--expandible FAQ menu, code from w3Schools -->
-         <h3 class="yellowHeaders"> Good to Know</h3>
-         <div id="FAQs">
-            <h4 class="bigWhiteText">A few things you may be wondering.</h4>
-            <hr>
-            <br>
-            <div>
+         <h1 class="yellowHeaders row"> Good to Know</h1>
+         <div class="row" id="faqs">
+            
+            <div id="faqHeader">
+               <h3 i>A few things you may be wondering.</h3>
+            </div>
+            
+            <div id="faqDropBox">
+               <hr>
             <details>
                <summary><strong>Do you offer gluten free options? &nbsp; +</strong></summary>
                <p>We bake a rotating selection of flourless treats, but our kitchen handles wheat flour daily and is not certified gluten-free.</p>
             </details>
-            <hr class="subtleLine">
-            
+            <hr>
+           
             <details>
                <summary><strong>How far ahead should I place a custom order? &nbsp; + </strong></summary>
                <p>We recommend at least 7 days for celebration cakes and 3 days for pastry boxes. Larger events may require more notice.</p>
             </details>
-            <hr class="subtleLine">
-            
+            <hr>
+           
             <details>
                <summary><strong>Do you deliver? &nbsp; +</strong></summary>
                <p>Local delivery is available for custom orders over $75 within 8 miles. A delivery fee is calculated with your quote.</p>
             </details>
-            <br>
+ 
             <hr>
             </div>
          </div>
-         
+        
    <!-- logo and name, blurb-->
-         <div id="contacDivParent">
+         <div class="row" id="contacDivParent">
             <div class="contactDivChild">
                <img id="bottomLogo" src="greenLogo.png" alt= "Sweet Clover Bakery Logo" >
-
-              <h3 class="subtitle"> <span class="title">Sweet Clover Bakery </span> 
+ 
+              <p class="smallSubtitle"> <span class="smallTitle">Sweet Clover Bakery </span>
                      Neighborhood Bakery
-                  </h3>
-               <p id="footerBlurb">Small-batch breads, pastries, and celebration <br>cakes, made by hand in the heart of the <br>neighborhood.</p>
+                  </p>
+               <p class="info">Small-batch breads, pastries, and celebration cakes, made by hand in the heart of the neighborhood.</p>
             </div>
-            
+           
       <!--normal footer information -->
             <div class="contactDivChild">
-               <h6 id="firstYellowHeader">Come By</h6>
-              <address id="locationInfo">
+               <h1 class="yellowHeaders">Come By</h1>
+              <address class="info">
                      218 Clover Lane <br>
                      Maplewood, OR 97035
                </address>
             </div>
             <div class="contactDivChild">
-               <h6 class="yellowHeaders">Bakery Hours</h6>
+               <h1 class="yellowHeaders">Bakery Hours</h1>
                <p class="info">Tue-Fri: 7am-3pm<br>
                   Sat-Sun: 8am-2pm<br>
                   Monday: Closed
                </p>
             </div>
-            
+           
             
             <!-- contact info -->
             <div class="contactDivChild">
-              <h6 class="yellowHeaders">Say Hello</h6>
+              <h1 class="yellowHeaders">Say Hello</h1>
               <address id="contactLinks">
-                  <p class="info"><a href="tel:+5035550147">(503) 555-0147</a></p>
-                  <a href="mailto:sweetcloverbakery@gmail.com">sweetcloverbakery@gmail.com</a><br>
-                  <a href="https://instagram.com" target="_blank">Instagram: @sweetcloverbakery</a>
-               </address> 
+                  <a href=tel:+5035550147>(503) 555-0147 <br></a> 
+                  <a href=mailto:sweetcloverbakery@gmail.com>sweetcloverbakery@gmail.com <br></a> 
+                  <a href=https://www.instagram.com target="_blank">Instagram: @sweetcloverbakery</a>
+               </address>
             </div>
          </div>
-      
+     
          <hr>
          <!-- unicodes from w3schools -->
-         <p id="trademark">&#169; 2025 Sweet Clover Bakery &#x25CF; Baked with care, always.</p>
-     
+         <p class="row" id="trademark">&#169; 2025 Sweet Clover Bakery &#x25CF; Baked with care, always.</p>
+    
       </footer>
    </body>
 

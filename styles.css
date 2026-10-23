@@ -47,7 +47,7 @@ ul li{
  
 ul li a{
    background:rgb(250, 244, 233);
-   padding: 14px 16px;
+   padding: 14px 60px;
    text-decoration: none;
    font-family: 'Roboto', 'Open Sans', sans-serif;
    color: rgb(81, 87, 81);
@@ -59,23 +59,23 @@ ul li a{
 }
  
 /*puts title and subtitle aligned vertically */
-nav span.title{
+nav span.smallTitle{
    font-family: 'Times New Roman', 'Times', serif;
-   font-size: 25px;
+   font-size: 20px;
    color: rgb(102, 120, 107);
    display: block;
 }
  
-nav h3.subtitle{
-  font-family: 'Raleway', 'Courier', monospace;
-   font-size: 16px;
+nav p.smallSubtitle{
+  font-family: 'Courier', monospace;
+   font-size: 10px;
    color: rgb(102, 120, 107);
    display: block;
-   margin-left: 16px;
+   margin-left: 60px;
 }
  
 img.scLogo{
-   height: 80px;
+   height: 50px;
    width: auto;
    margin: 0px;
 }
@@ -96,11 +96,121 @@ button#startOrder{
 
 
 /* ARTICLE OR DIV STYLES*/
+
+h1.smallHeader{
+   font-size: 12px;
+   font-family: 'Courier', monospace;
+}
+
+h2#indexHeaderOne{
+   font-size: 55px;
+   font-family: serif;
+   color: white;
+   margin: 0px 0px 0px 60px;
+}
+
+h2#indexHeaderTwo{
+   font-size: 55px;
+   font-family: serif;
+   color: rgb(212, 178, 108);
+   margin: 0px 0px 20px 60px;
+}
+
+h3.mediumHeaderDark{
+   font-size: 35px;
+   font-family: serif;
+   color:rgb(42,70,56);
+}
+
+h4{
+   font-size: 25px;
+   font-family: serif;
+   color: rgb(36, 69, 44);
+}
+
+h5{
+   font-size: 15px;
+   font-family: sans-serif;
+   color: rgb(42,70,56);
+}
+
+
+/* Code from https://webdevetc.com/
+ blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just
+-css-and-html/ */
+div#indexBanner{
+   width: 100%;
+   height: 750px;
+   background-image: 
+      linear-gradient(to right, 
+      rgba(42, 70, 56, 1),
+      rgba(102, 120, 107, 0.2)),
+      url("bannerImage.jpg");
+   background-size: cover;
+   background-position: center;
+}
+
+div#indexBanner p{
+   color: white;
+   font-family: sans-serif;
+   font-size: 18px;
+   margin:0px 0px 50px 60px;
+}
+
+button#menuButton{
+   background-color: white;
+   color: rgb(42,70,56);
+   padding: 12px 22px;
+   border: 2px solid rgb(49, 91, 59);
+   border-radius: 60px;
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   font-size: 15px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.2s ease,
+               color 0.2s ease;
+   margin: 0px 60px 0px 60px;
+}
+
+button#customButton{
+   background-color: transparent;
+   color: white;
+   padding: 12px 22px;
+   border: 0.5px solid white;
+   border-radius: 60px;
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   font-size: 15px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.2s ease,
+               color 0.2s ease;
+   margin: 0px 60px 0px 0px;
+}
+
+
+
+
+
+
+
+
 /*collabsible FAQ menu styling */
-h4.bigWhiteText{
+div#indexOurStory{
+   background-color: rgb(255, 253, 248);
+}
+
+div#indexMeetTheTeam{
+   background-color: rgb(233, 221, 200);
+}
+
+div#indexInfoSection{
+   background-color: rgb(212, 178, 108);
+}
+
+h3{
    font-size: 30px;
    color: rgb(250, 244, 233);
-   margin: 0 0 20px 16px;
+   margin: 0 0 20px 60px;
 }
  
 details > summary{
@@ -108,7 +218,7 @@ details > summary{
    list-style: none;
    cursor: pointer;
    font-family: 'Roboto', 'Open Sans', sans-serif;
-   padding-left: 16px;
+   padding-left: 60px;
    font-size: 18px;
  
 }
@@ -116,7 +226,7 @@ details > summary{
 details{
    color:rgb(250, 244, 233);
    font-family: 'Roboto', 'Open Sans', sans-serif;
-   padding-left: 16px;
+   padding-left: 60px;
    text-align: left;
 }
  
@@ -124,47 +234,120 @@ hr.subtleLine{
    color:rgb(102, 120, 107);
 }
 
+
 /* PAGE FOOTER STYLES*/
-div#FAQs {
+
+
+footer{
    display: flex;
+   flex-wrap: wrap;
+   background-color:rgb(42,70,56);
+} 
+
+.row{
+   display: flex;
+   width: 100%;
+   gap: 15px;
+} 
+
+.yellowHeaders, yellowHeader row{
+flex: 1 0 100%;
+font-size: 18px;
+font-family: 'Courier', monospace;
+color: rgb(212, 178, 108);
+margin-bottom: 5px;
+margin-left: 60px;
 }
 
+div#indexBanner h1{
+   padding-top: 170px;
+}
 
-/* =============================================
-   Tablet and Desktop Styles: greater than 510px
-   =============================================
-*/
-@media only screen and (min-width:511px) {
+#faqHeader{
+   flex: 1 0 50%;
+}
+
+#faqDropBox{
+   flex: 1 0 50%;
+}
+
+#contacDivParent{
+   flex: 1 0 25%;
+   flex-wrap: nowrap;
+
    
-      
-   
+   width: 100%;
+   gap: 40px;
 }
 
-/* =============================================
-   Tablet and Desktop Styles: greater than 640px
-   =============================================
-*/
-@media only screen and (min-width:641px) {
-      
-   
+#trademark {
+   flex: 1 0 100%;
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(250, 244, 223);
+   text-align: center;
+   font-size: 10px;
+   padding-bottom: 10px;
+}
+ 
+div.contactDivChild{
+   flex: 1;
+   padding: 60px;
 }
 
-/* =============================================
-   Tablet and Desktop Styles: greater than 720px
-   =============================================
-*/
-@media only screen and (min-width: 721px) {
-       
+img#bottomLogo{
+   height:75px;
+   width: auto;
+   float: left;
+   margin: 0px;
 }
 
-/* =============================================
-   Tablet and Desktop Styles: greater than 1020px
-   =============================================
-*/
-@media only screen and (min-width: 1021px) {
 
-    
+footer span.smallTitle{
+   font-family: 'Times New Roman', 'Times', serif;
+   font-size: 25px;
+   color: rgb(250, 244, 223);
 }
+
+footer p.smallSubtitle{
+   font-family:'Courier', monospace;
+   font-size: 60px;
+   color: rgb(250, 244, 223);
+   margin-right: 60px;
+}
+
+/*START OF CODE THAT NEEDS FIXED */ 
+p.info, address.info{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color:rgb(147, 158, 145);
+   background-color:rgb(42,70,56);
+   margin-left: 60px;
+}
+
+/*Instagram link needs fixed */
+footer address#contactLinks :link{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(250, 244, 223);
+   background-color:rgb(42,70,56);
+   text-decoration: none;
+}
+
+footer address#contactLinks :visited{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(147, 158, 145);
+   background-color: rgb(42,70,56);
+   text-decoration: none;
+}
+
+
+footer address#contactLinks :hover{
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color:rgb(212, 178, 108);
+   background-color: rgb(42,70,56);
+   text-decoration: none;
+}
+
+ 
+
 /* MENU PAGE STYLES */
 
 #bakeryMenu {
@@ -240,134 +423,18 @@ div#FAQs {
 
 /* PAGE FOOTER STYLES*/
  
-footer{
-    background-color:rgb(42,70,56);
-}
+
  
-/*container for 4 smaller divs*/
-div#contactDivParent{
-   display: flex;
-   width: 100%;
-   gap: 40px;
-}
+
+
  
  
-/*small divs: */
-div.contactDivChild{
-   flex: 1;
-   padding: 16px;
-   text-align: left;
-}
+
+
  
-img#bottomLogo{
-   height:80px;
-   width: auto;
-   margin: 0px 0px 0px 0px;
-   padding: 0px 0px 0px 0px;
-   float: left;
-}
+
  
-footer span.title{
-   font-family: 'Times New Roman', 'Times', serif;
-   font-size: 25px;
-   color: rgb(250, 244, 223);
-   display: block;
-   margin: 20px 0px 0px 0px;
-}
- 
-footer h3.subtitle{
-   font-family: 'Raleway', 'Courier', monospace;
-   font-size: 16px;
-   color: rgb(250, 244, 223);
-   display: block;
-   padding-bottom:20px;
-   margin: 0px 0px 0px 16px;
-}
- 
-p#footerBlurb{
-   font-family: 'Roboto', 'Open Sans', sans-serif;
-   color:rgb(147, 158, 145);
-   background-color:rgb(42,70,56);
-   float: left;
-   margin: 0px 0px 75px 16px;
-   padding-top: 0px;
- 
-}
- 
- 
-/*yellow footer headers ("Come By" is spaced differently) */
-footer h6#firstYellowHeader{
-margin: 150px 0px 0px 16px;
-padding-bottom: 15px;
-font-size: 18px;
-font-family: 'Raleway', 'Courier', monospace;
-color: rgb(212, 178, 108);
-}
-h6.yellowHeaders, h3.yellowHeaders{
-margin: 100px 0px 0px 16px;
-padding:15px 0px;
-font-size: 18px;
-font-family: 'Raleway', 'Courier', monospace;
-color: rgb(212, 178, 108);
-}
- 
- 
-/*footer info styling */
-footer p.info{
-   font-family: 'Roboto', 'Open Sans', sans-serif;
-   color:rgb(147, 158, 145);
-   float: left;
-   margin: 0px 0px 20px 16px;
-}
- 
- 
-footer address#locationInfo{
-   font-family: 'Roboto', 'Open Sans', sans-serif;
-   color:rgb(147, 158, 145);
-   background-color:rgb(42,70,56);
-   margin:  0px 0px 20px 16px;
-   display: block;
-   float: left;
-}
- 
- 
-footer address#contactLinks :link{
-   font-family: 'Roboto', 'Open Sans', sans-serif;
-   color: rgb(250, 244, 223);
-   background-color:rgb(42,70,56);
-   text-decoration: none;
-   margin: 0px 0px 10px 16px;
-   padding: 20px 115px 0px 0px;
-   display: inline-block;
-}
-footer address#contactLinks :hover{
-   font-family: 'Roboto', 'Open Sans', sans-serif;
-   color:rgbrgb(212, 178, 108);
-   background-color: rgb(42,70,56);
-   text-decoration: none;
-   margin: 0px 0px 20px 16px;
-   padding: 20px 700px 0px 0px;
-   display: inline-block;
-   float: left;
-}
-footer address#contactLinks :visited{
-   font-family: 'Roboto', 'Open Sans', sans-serif;
-   color: rgb(147, 158, 145);
-   background-color: rgb(42,70,56);
-   text-decoration: none;
-   margin: 0px 0px 20px 16px;
-   padding: 20px 700px 0px 0px;
-   display: inline-block;
-   float: left;
-}
- 
-p#trademark{
-   font-family: 'Roboto', 'Open Sans', sans-serif;
-   color: rgb(250, 244, 223);
-   text-align: center;
-   font-size: 10px;
-   padding-bottom: 10px;
-}
+
  
  
 /* =============================================
@@ -422,7 +489,7 @@ p#trademark{
 #customOrders h1,
 #customOrders h2,
 #customOrders h3 {
-   font-family: 'Raleway', 'Courier', monospace;
+   font-family:'Courier', monospace;
    line-height: 1.3;
 }
 
@@ -693,7 +760,7 @@ p#trademark{
 #customOrders .customForm legend {
    padding: 0 10px;
    color: rgb(49, 91, 59);
-   font-family: 'Raleway', 'Courier', monospace;
+   font-family: 'Courier', monospace;
    font-size: 1.15rem;
    font-weight: bold;
 }
@@ -722,7 +789,7 @@ p#trademark{
    width: 100%;
    min-height: 46px;
    padding: 11px 12px;
-   border: 1px solid rgb(166, 166, 151);
+   border: 1px solid rgb(6, 166, 151);
    border-radius: 5px;
    background-color: white;
    color: rgb(45, 49, 44);
@@ -831,7 +898,7 @@ p#trademark{
 @media only screen and (max-width: 510px) {
    #customOrders #customHero,
    #customOrders .customSection {
-      padding: 32px 20px;
+      padding: 60px 20px;
    }
 
    #customOrders .customHeroImage {
@@ -839,7 +906,7 @@ p#trademark{
    }
 
    #customOrders .customForm {
-      padding: 16px;
+      padding: 60px;
    }
 
    #customOrders .customForm fieldset {
@@ -868,4 +935,41 @@ p#trademark{
    html {
       scroll-behavior: auto;
    }
+}
+
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 510px
+   =============================================
+*/
+@media only screen and (min-width:511px) {
+   
+      
+   
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width:641px) {
+      
+   
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 720px
+   =============================================
+*/
+@media only screen and (min-width: 721px) {
+       
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 1020px
+   =============================================
+*/
+@media only screen and (min-width: 1021px) {
+
+    
 }
