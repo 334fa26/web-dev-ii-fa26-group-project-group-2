@@ -41,99 +41,116 @@
             <button id="startOrder" type="button">Start An Order &#8594;</button>
          </nav>
       </header>
-
       <main>
+         
+      </main>
          <!--Banner of homepage with background image and buttons to other pages -->
          <div id="indexBanner">
-            <h1 class="yellowHeaders">Made Fresh in Maryville</h1>
-            <h2 id= "indexHeaderOne">Good things</h2>
-            <h2 id="indexHeaderTwo"><em>rise slowly.</em></h2>
-            
-            <p>Thoughtful bread, joyful pastries, and cakes for celebrating - all made from scratch with local ingredients and plenty of time</p>
-             
+            <p class="smallHeadingDefault">Made Fresh in Maryville</p>
+            <h1 id="goodThings">Good things</h1>
+            <h1 id="riseSlowly"><em>rise slowly.</em></h1>
+
+             <p class="paragraph">Thoughtful bread, joyful pastries, and cakes for celebrating - all made from scratch with local ingredients and plenty of time</p>
             <button id="menuButton" type="button">Explore today's menu &#8594;</button>
             <button id="customButton" type="button">Plan something special</button>
          </div>
-         
+      
          <!-- "Our Story" part of homepage -->
          <div id="indexOurStory">
-            <!--insert image here -->
-            <h1 class="smallHeader"> Our Story</h1>
-            <h3 class="mediumHeaderDark"> A neighborhood bakery with a little more time.</h3>
             
-            <p>Sweet Clover started with one sourdough starter, a tiny home oven, and a belief
+            <div class="ourStoryCols">
+            <img id="firstLoaf" src="bread.jpg" alt="Sweet Clover Bakery founder displaying a loaf of bread" />
+            </div>
+            
+            <div class="ourStoryCols">
+                   <p class="smallHeadingBrown"> Our Story</p>
+            <h2 class="mediumHeaderDark"> A neighborhood bakery with a little more time.</h2>
+            
+            <p class="paragraph">Sweet Clover started with one sourdough starter, a tiny home oven, and a belief
                that everyday food can still feel special. We bake the old-fashioned way: slowly,
                seasonally, and always from scratch.</p>
 
-            <p>Today, our sunny corner bakery is a gathering place for morning regulars, 
+            <p class="paragraph">Today, our sunny corner bakery is a gathering place for morning regulars, 
                after-school cookie runs, and celebrations of every size.</p>
             
-            <p>see what's baking &#8594;</p>
+            <p class="smallHeadingBrown">see what's baking &#8594;</p>
+
+            </div>
          </div>
-         
-         <!--meet the team -->
+      
+       <!--meet the team -->
          <div id=indexMeetTheTeam>
-            <h1 class="smallHeader">The people behind the pastry</h1>
-            <h3 class="mediumHeaderDark">Meet our small but mighty team.</h3>
-            <p>Flour-dusted, early-rising, and endlessly curious
-            — we’re a close-knit crew who really loves feeding people.</p>
             
-            <!--insert image of Mara here -->
-            <h4>Mara Ellison</h4>
-            <h1 class="smallHeader">Founder and Head Baker</h1>
+               <p class="smallHeadingBrown">The people behind the pastry</p>
+               <h2 class="mediumHeaderDark">Meet our small but mighty team.</h2>
+               <p class="paragraph">Flour-dusted, early-rising, and endlessly curious
+               — we’re a close-knit crew who really loves feeding people.</p>
             
-            <p>A lifelong baker with a soft spot for laminated dough and perfect peaches.</p>
             
-            <!-- insert image of Theo here -->
-            <h4>Theo Park</h4>
-            <h1 class="smallHeader">Bread Lead</h1>
-            
-            <p>Keeper of the starter and believer in long ferments, dark crusts, and second coffee.</p>
+            <div class="meetTheTeamChild">
+               <div id="Emma">
+                  <img class="teamImages" src="emma.avif" alt="Founder Emma holding a loaf of bread" />
+                  <h3>Emma Ellison</h3>
+                  <p class="smallHeadingBrown">Founder and Head Baker</p>
+
+                  <p class="paragraph">A lifelong baker with a soft spot for laminated dough and perfect peaches.</p>
+               </div>
+               
+               <div id="Carter">
+                  <img class="teamImages" src="carter.jpg" alt="Bread Lead Carter frosting a desert" />
+                  <h3>Theo Park</h3>
+                  <p class="smallHeadingBrown">Bread Lead</p>
+
+                  <p class="paragraph">Keeper of the starter and believer in long ferments, dark crusts, and second coffee.</p>
+               </div>
+            </div>
          </div>
-         
-         <!--Yellow info section INSERT ICONS STILL -->
+      
+        <!--Yellow info section -->
          <div id="indexInfoSection">
-            <h5>218 Clover Lane</h5>
-            <p>Maplewood, Oregon</p>
-            <h5>Tuesday through Sunday</h5>
-            <p>Opening at 7am weekdays, 8am weekends</p>
-            <h5>(503) 555-0147</h5>
-            <p>Give us a ring - we're friendly</p>
-         </div>
-         
-      </main>
-      <div>
-         
-      </div>
-      <footer>
-      <!--expandible FAQ menu, code from w3Schools -->
-         <h1 class="yellowHeaders row"> Good to Know</h1>
-         <div class="row" id="faqs">
-            
-            <div id="faqHeader">
-               <h3 i>A few things you may be wondering.</h3>
+            <div class="infoChild">
+            <p><strong>218 Clover Lane</strong></p>
+            <p>Maryville, Missouri</p>
             </div>
             
+            <div class="infoChild">
+            <p><strong>Tuesday through Sunday</strong></p>
+            <p>Opening at 7am weekdays, 8am weekends</p>
+            </div>
+            
+            <div class="infoChild">
+               <p><strong>(503) 555-0147</strong></p>
+               <p>Give us a ring - we're friendly</p>
+               </div>
+         </div>
+<footer>
+      <!--expandible FAQ menu, code from w3Schools -->
+         <p class="yellowHeaders row"> Good to Know</p>
+         <div class="row" id="faqs">
+            <div id="faqHeader"><h2>A few things you may be wondering.</h2>
+ 
+ 
+               </div>
             <div id="faqDropBox">
-               <hr>
+               <hr class="line">
             <details>
                <summary><strong>Do you offer gluten free options? &nbsp; +</strong></summary>
                <p>We bake a rotating selection of flourless treats, but our kitchen handles wheat flour daily and is not certified gluten-free.</p>
             </details>
-            <hr>
+            <hr class="line">
            
             <details>
                <summary><strong>How far ahead should I place a custom order? &nbsp; + </strong></summary>
                <p>We recommend at least 7 days for celebration cakes and 3 days for pastry boxes. Larger events may require more notice.</p>
             </details>
-            <hr>
+            <hr class="line">
            
             <details>
                <summary><strong>Do you deliver? &nbsp; +</strong></summary>
                <p>Local delivery is available for custom orders over $75 within 8 miles. A delivery fee is calculated with your quote.</p>
             </details>
  
-            <hr>
+            <hr class="line">
             </div>
          </div>
         
@@ -142,22 +159,23 @@
             <div class="contactDivChild">
                <img id="bottomLogo" src="greenLogo.png" alt= "Sweet Clover Bakery Logo" >
  
-              <p class="smallSubtitle"> <span class="smallTitle">Sweet Clover Bakery </span>
+              
+              <p id="subtitle"> <span id="title">Sweet Clover Bakery </span>
                      Neighborhood Bakery
                   </p>
-               <p class="info">Small-batch breads, pastries, and celebration cakes, made by hand in the heart of the neighborhood.</p>
+               <p class="paragraph">Small-batch breads, pastries, and celebration <br>cakes, made by hand in the heart of the <br>neighborhood.</p>
             </div>
            
       <!--normal footer information -->
             <div class="contactDivChild">
-               <h1 class="yellowHeaders">Come By</h1>
+               <p class="yellowHeaders">Come By</p>
               <address class="info">
                      218 Clover Lane <br>
-                     Maplewood, OR 97035
+                     Maryville Missouri, 64468
                </address>
             </div>
             <div class="contactDivChild">
-               <h1 class="yellowHeaders">Bakery Hours</h1>
+               <p class="yellowHeaders">Bakery Hours</p>
                <p class="info">Tue-Fri: 7am-3pm<br>
                   Sat-Sun: 8am-2pm<br>
                   Monday: Closed
@@ -167,11 +185,11 @@
             
             <!-- contact info -->
             <div class="contactDivChild">
-              <h1 class="yellowHeaders">Say Hello</h1>
+              <p class="yellowHeaders">Say Hello</p>
               <address id="contactLinks">
-                  <a href=tel:+5035550147>(503) 555-0147 <br></a> 
-                  <a href=mailto:sweetcloverbakery@gmail.com>sweetcloverbakery@gmail.com <br></a> 
-                  <a href=https://www.instagram.com target="_blank">Instagram: @sweetcloverbakery</a>
+                  <p class="info"><a href=tel:+5035550147>(503) 555-0147</a></p>
+                  <a  class="info" href=mailto:sweetcloverbakery@gmail.com>sweetcloverbakery@gmail.com</a><br>
+                  <a class="info" href=https://instagram.com target="_blank">Instagram: @sweetcloverbakery</a>
                </address>
             </div>
          </div>
@@ -181,6 +199,9 @@
          <p class="row" id="trademark">&#169; 2025 Sweet Clover Bakery &#x25CF; Baked with care, always.</p>
     
       </footer>
+
+
+     
    </body>
 
 </html>

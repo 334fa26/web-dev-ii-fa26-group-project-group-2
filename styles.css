@@ -59,14 +59,14 @@ ul li a{
 }
  
 /*puts title and subtitle aligned vertically */
-nav span.smallTitle{
+span.smallTitle{
    font-family: 'Times New Roman', 'Times', serif;
    font-size: 20px;
    color: rgb(102, 120, 107);
    display: block;
 }
  
-nav p.smallSubtitle{
+p.smallSubtitle{
   font-family: 'Courier', monospace;
    font-size: 10px;
    color: rgb(102, 120, 107);
@@ -95,45 +95,82 @@ button#startOrder{
 }
 
 
-/* ARTICLE OR DIV STYLES*/
-
-h1.smallHeader{
-   font-size: 12px;
-   font-family: 'Courier', monospace;
+/* HEADING AND TYPOGRAPHY STYLES */
+p.smallHeadingDefault{
+   color: rgb(212,178,108);
+   font-size: 0.78rem;
+   font-weight: bold;
+   letter-spacing: 2px;
+   margin-bottom: 10px;
+   margin-left: 16px;
+   font-family: monospace;
 }
 
-h2#indexHeaderOne{
-   font-size: 55px;
-   font-family: serif;
-   color: white;
-   margin: 0px 0px 0px 60px;
+p.smallHeadingBrown{
+   color: rgb(130, 105, 57);
+   font-size: 0.78rem;
+   font-weight: bold;
+   letter-spacing: 2px;
+   margin-bottom: 10px;
+   margin-left: 16px;
+   font-family: monospace;
 }
 
-h2#indexHeaderTwo{
-   font-size: 55px;
+h1#goodThings{
+    color: white;
+    font-size: 55px;
    font-family: serif;
+   margin: 0px 0px 0px 16px;
+}
+
+h1#riseSlowly{
    color: rgb(212, 178, 108);
-   margin: 0px 0px 20px 60px;
+    font-size: 55px;
+   font-family: serif;
+   margin: 0px 0px 0px 16px;
 }
 
-h3.mediumHeaderDark{
+h2.mediumHeaderDark{
    font-size: 35px;
    font-family: serif;
    color:rgb(42,70,56);
+   margin-left: 16px;
 }
 
-h4{
-   font-size: 25px;
-   font-family: serif;
-   color: rgb(36, 69, 44);
-}
 
-h5{
-   font-size: 15px;
+
+p.paragraph{
    font-family: sans-serif;
-   color: rgb(42,70,56);
+   font-size: 18px;
+   margin-left: 16px;
 }
 
+div#indexBanner p.paragraph{
+   color: white;
+    margin:0px 0px 50px 16px;
+}
+
+footer p.paragraph{
+   color: rgb(102, 120, 107);
+   margin: 0px 0px 50px 60px;
+}
+
+div#indexInfoSection p{
+   font-family:sans-serif;
+}
+
+div#indexInfoSection{
+   display: flex;
+   flex-direction: row;
+}
+
+div.infoChild{
+   flex: 1;
+   flex-direction: column;
+   display: flex;
+   text-align: center;
+   
+}
 
 /* Code from https://webdevetc.com/
  blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just
@@ -148,13 +185,6 @@ div#indexBanner{
       url("bannerImage.jpg");
    background-size: cover;
    background-position: center;
-}
-
-div#indexBanner p{
-   color: white;
-   font-family: sans-serif;
-   font-size: 18px;
-   margin:0px 0px 50px 60px;
 }
 
 button#menuButton{
@@ -187,11 +217,58 @@ button#customButton{
    margin: 0px 60px 0px 0px;
 }
 
+div#indexOurStory{
+   display: flex;
+   flex-direction: row;
+   justify-content:center;
+   margin-top: 80px;
+   gap: 60px;
+}
+
+div.ourStoryCols{
+   flex: 1;
+   padding: 30px;
+   display:flex;
+   flex-direction: column;
+   align-items: left;
+}
 
 
+img#firstLoaf{
+   width: 100%;
+   max-width: 100%;
+   height: 450px;
+   display: block;
+   object-fit: cover;
+}
 
+div#indexMeetTheTeam{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
 
+div.meetTheTeamChild{
+   flex: 1;
+   padding: 30px;
+   flex-direction: row;
+   display: flex;
+   gap: 60px;
+}
 
+div#Carter, div#Emma{
+   flex:1;
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   background-color: white;
+}
+
+img.teamImages{
+   width: 100%;
+  
+}
 
 
 /*collabsible FAQ menu styling */
@@ -205,12 +282,14 @@ div#indexMeetTheTeam{
 
 div#indexInfoSection{
    background-color: rgb(212, 178, 108);
+   
+   padding: 30px;
 }
 
-h3{
+h2{
    font-size: 30px;
    color: rgb(250, 244, 233);
-   margin: 0 0 20px 60px;
+   margin: 0 0 20px 16px;
 }
  
 details > summary{
@@ -219,6 +298,7 @@ details > summary{
    cursor: pointer;
    font-family: 'Roboto', 'Open Sans', sans-serif;
    padding-left: 60px;
+   padding-right: 60px;
    font-size: 18px;
  
 }
@@ -230,13 +310,27 @@ details{
    text-align: left;
 }
  
-hr.subtleLine{
+hr.line{
    color:rgb(102, 120, 107);
+   margin-right: 60px;
 }
 
 
 /* PAGE FOOTER STYLES*/
-
+footer span#title{
+   font-family: 'Times New Roman', 'Times', serif;
+   font-size: 20px;
+   color: white;
+   display: block;
+}
+ 
+footer p#subtitle{
+  font-family: 'Courier', monospace;
+   font-size: 15px;
+   color: white;
+   display: block;
+   margin-left: 65px;
+}
 
 footer{
    display: flex;
@@ -244,22 +338,24 @@ footer{
    background-color:rgb(42,70,56);
 } 
 
+
 .row{
    display: flex;
    width: 100%;
    gap: 15px;
+
 } 
 
-.yellowHeaders, yellowHeader row{
+p.yellowHeaders, yellowHeaders row{
 flex: 1 0 100%;
 font-size: 18px;
 font-family: 'Courier', monospace;
 color: rgb(212, 178, 108);
 margin-bottom: 5px;
-margin-left: 60px;
+margin-left: 16px;
 }
 
-div#indexBanner h1{
+div#indexBanner p{
    padding-top: 170px;
 }
 
@@ -275,19 +371,15 @@ div#indexBanner h1{
    flex: 1 0 25%;
    flex-wrap: nowrap;
 
-   
-   width: 100%;
-   gap: 40px;
 }
 
-#trademark {
-   flex: 1 0 100%;
-   font-family: 'Roboto', 'Open Sans', sans-serif;
-   color: rgb(250, 244, 223);
-   text-align: center;
-   font-size: 10px;
-   padding-bottom: 10px;
+#faqHeader{
+   flex: 1 0 50%;
 }
+#faqDropBox{
+   flex: 1 0 50%;
+}
+
  
 div.contactDivChild{
    flex: 1;
@@ -315,15 +407,14 @@ footer p.smallSubtitle{
    margin-right: 60px;
 }
 
-/*START OF CODE THAT NEEDS FIXED */ 
-p.info, address.info{
+p.info, address.info, a.info{
    font-family: 'Roboto', 'Open Sans', sans-serif;
    color:rgb(147, 158, 145);
    background-color:rgb(42,70,56);
-   margin-left: 60px;
+   margin-left: 16px;
 }
 
-/*Instagram link needs fixed */
+
 footer address#contactLinks :link{
    font-family: 'Roboto', 'Open Sans', sans-serif;
    color: rgb(250, 244, 223);
@@ -346,7 +437,15 @@ footer address#contactLinks :hover{
    text-decoration: none;
 }
 
- 
+#trademark {
+   flex: 1 0 100%;
+   justify-content: center;
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(250, 244, 223);
+   font-size: 10px;
+   padding-bottom: 10px;
+}
+
 
 /* MENU PAGE STYLES */
 
@@ -422,17 +521,30 @@ footer address#contactLinks :hover{
 }
 
 /* PAGE FOOTER STYLES*/
+footer{
+      display: flex;
+   flex-wrap: wrap;
+    background-color:rgb(42,70,56);
+}
+.row{
+   display: flex;
+   width: 100%;
+   gap: 15px;
+}
+.yellowHeaders{
+flex: 1 0 100%;
+}
  
+#faqHeader{
+   flex: 1 0 50%;
+}
+#faqDropBox{
+   flex: 1 0 50%;
+}
 
- 
-
-
- 
- 
-
-
- 
-
+#trademark {
+   flex: 1 0 100%;
+}
  
 
  
