@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+         Project Description:
+ 
+         Author(s): Cailyn Auffert
+         Date:   10-17-2026
+         Filename: Menu.html
+      -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Menu | Sweet Clover Bakery</title>
+<link href="styles.css" rel="stylesheet" />
+</head>
+ 
+   <body>
+<header>
+<nav>
+<!--logo -->
+<img class="scLogo" src="SweetCloverLogo.png" alt= "Sweet Clover Bakery Logo">
+
+<!-- Business Name header, code from: https://share.google/aimode/2FZoVvtYfwHOFoLVv -->
+<h3 class="subtitle"> <span class="title">Sweet Clover Bakery </span> 
+               Neighborhood Bakery
+</h3>
+<ul>
+<!-- pages -->
+<li><a href="index.html">Our Story</a></li>
+<li><a href="Menu.html">Menu</a></li>
+<li><a href="Custom.html">Custom Orders</a></li>
+</ul>
+<!--Start an Order button, arrow unicode from W3Schools-->
+<button id="startOrder" type="button">Start An Order &#8594;</button>
+</nav>
+</header>
+ 
+      <!--Start of menu content -->
+<main id="bakeryMenu">
+         <section id="menuIntro">
+            <h1>Our Menu</h1>
+            <p>
+               Freshly baked favorites made with care at Sweet Clover Bakery.
+               From buttery pastries to artisan breads and homemade treats,
+               there's something for everyone.
+            </p>
+         </section>
+
+         <section class="menuCategory">
+            <h2>Breakfast &amp; Pastries</h2>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Item</th>
+                     <th>Description</th>
+                     <th>Price</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Butter Croissant</td>
+                     <td>Flaky, buttery French-style pastry</td>
+                     <td>$3.25</td>
+                  </tr>
+                  <tr>
+                     <td>Chocolate Croissant</td>
+                     <td>Croissant filled with dark chocolate</td>
+                     <td>$3.75</td>
+                  </tr>
+                  <tr>
+                     <td>Cinnamon Roll</td>
+                     <td>Soft roll with cinnamon filling and vanilla glaze</td>
+                     <td>$4.25</td>
+                  </tr>
+                  <tr>
+                     <td>Blueberry Muffin</td>
+                     <td>Fresh blueberries with a crumb topping</td>
+                     <td>$3.25</td>
+                  </tr>
+                  <tr>
+                     <td>Lemon Poppyseed Muffin</td>
+                     <td>Bright lemon flavor with poppy seeds</td>
+                     <td>$3.25</td>
+                  </tr>
+                  <tr>
+                     <td>Seasonal Scone</td>
+                     <td>Rotating seasonal flavor</td>
+                     <td>$3.50</td>
+                  </tr>
+               </tbody>
+            </table>
+         </section>
+
+         <section class="menuCategory">
+            <h2>Breads</h2>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Item</th>
+                     <th>Description</th>
+                     <th>Price</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Classic Sourdough</td>
+                     <td>Crisp crust with a chewy interior</td>
+                     <td>$7.50</td>
+                  </tr>
+                  <tr>
+                     <td>Honey Wheat</td>
+                     <td>Soft wheat bread lightly sweetened with honey</td>
+                     <td>$6.50</td>
+                  </tr>
+                  <tr>
+                     <td>Rosemary Garlic Focaccia</td>
+                     <td>Olive oil bread with rosemary and roasted garlic</td>
+                     <td>$7.00</td>
+                  </tr>
+                  <tr>
+                     <td>Cinnamon Raisin</td>
+                     <td>Sweet bread with cinnamon and raisins</td>
+                     <td>$7.00</td>
+                  </tr>
+               </tbody>
+            </table>
+         </section>
+
+         <section class="menuCategory">
+            <h2>Cookies &amp; Treats</h2>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Item</th>
+                     <th>Description</th>
+                     <th>Price</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Chocolate Chip Cookie</td>
+                     <td>Classic chocolate chip cookie</td>
+                     <td>$2.50</td>
+                  </tr>
+                  <tr>
+                     <td>Double Chocolate Cookie</td>
+                     <td>Rich chocolate cookie with chocolate chips</td>
+                     <td>$2.75</td>
+                  </tr>
+                  <tr>
+                     <td>Sugar Cookie</td>
+                     <td>Soft sugar cookie with vanilla icing</td>
+                     <td>$2.50</td>
+                  </tr>
+                  <tr>
+                     <td>Oatmeal Cream Pie</td>
+                     <td>Soft oatmeal cookies with vanilla cream filling</td>
+                     <td>$3.00</td>
+                  </tr>
+                  <tr>
+                     <td>Brownie</td>
+                     <td>Fudgy chocolate brownie</td>
+                     <td>$3.25</td>
+                  </tr>
+               </tbody>
+            </table>
+         </section>
+
+         <section id="menuOrder">
+            <h2>Ordering Something Special?</h2>
+            <p>
+               Looking for a custom cake or treats for your next celebration?
+               Check out our custom order options.
+            </p>
+            <a href="Custom.html" class="menuLink">Explore Custom Orders</a>
+         </section>
+      </main>
+      
+      <footer>
+      <!--expandible FAQ menu, code from w3Schools -->
+         <p class="yellowHeaders row"> Good to Know</p>
+         <div class="row" id="faqs">
+            <div id="faqHeader"><h2>A few things you may be wondering.</h2>
+ 
+ 
+               </div>
+            <div id="faqDropBox">
+               <hr class="line">
+            <details>
+               <summary><strong>Do you offer gluten free options? &nbsp; +</strong></summary>
+               <p>We bake a rotating selection of flourless treats, but our kitchen handles wheat flour daily and is not certified gluten-free.</p>
+            </details>
+            <hr class="line">
+           
+            <details>
+               <summary><strong>How far ahead should I place a custom order? &nbsp; + </strong></summary>
+               <p>We recommend at least 7 days for celebration cakes and 3 days for pastry boxes. Larger events may require more notice.</p>
+            </details>
+            <hr class="line">
+           
+            <details>
+               <summary><strong>Do you deliver? &nbsp; +</strong></summary>
+               <p>Local delivery is available for custom orders over $75 within 8 miles. A delivery fee is calculated with your quote.</p>
+            </details>
+ 
+            <hr class="line">
+            </div>
+         </div>
+        
+   <!-- logo and name, blurb-->
+         <div class="row" id="contacDivParent">
+            <div class="contactDivChild">
+               <img id="bottomLogo" src="greenLogo.png" alt= "Sweet Clover Bakery Logo" >
+ 
+              
+              <p id="subtitle"> <span id="title">Sweet Clover Bakery </span>
+                     Neighborhood Bakery
+                  </p>
+               <p class="paragraph">Small-batch breads, pastries, and celebration <br>cakes, made by hand in the heart of the <br>neighborhood.</p>
+            </div>
+           
+      <!--normal footer information -->
+            <div class="contactDivChild">
+               <p class="yellowHeaders">Come By</p>
+              <address class="info">
+                     218 Clover Lane <br>
+                     Maryville Missouri, 64468
+               </address>
+            </div>
+            <div class="contactDivChild">
+               <p class="yellowHeaders">Bakery Hours</p>
+               <p class="info">Tue-Fri: 7am-3pm<br>
+                  Sat-Sun: 8am-2pm<br>
+                  Monday: Closed
+               </p>
+            </div>
+           
+            
+            <!-- contact info -->
+            <div class="contactDivChild">
+              <p class="yellowHeaders">Say Hello</p>
+              <address id="contactLinks">
+                  <p class="info"><a href=tel:+5035550147>(503) 555-0147</a></p>
+                  <a  class="info" href=mailto:sweetcloverbakery@gmail.com>sweetcloverbakery@gmail.com</a><br>
+                  <a class="info" href=https://instagram.com target="_blank">Instagram: @sweetcloverbakery</a>
+               </address>
+            </div>
+         </div>
+     
+         <hr>
+         <!-- unicodes from w3schools -->
+         <p class="row" id="trademark">&#169; 2025 Sweet Clover Bakery &#x25CF; Baked with care, always.</p>
+    
+      </footer>
+
+</body>
+ 
+</html>
