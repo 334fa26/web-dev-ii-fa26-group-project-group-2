@@ -17,7 +17,7 @@ html {
 
 /* HEADER STYLES */
 header{
-   background:rgb(250, 244, 233); 
+   background:rgb(250, 244, 233);
 }
 
 /* NAVIGATION LIST STYLES */
@@ -103,8 +103,7 @@ p.smallHeadingDefault{
    letter-spacing: 2px;
    margin-bottom: 10px;
    margin-left: 16px;
-   font-family: 'Roboto', 'Open Sans', sans-serif;
-
+   font-family: monospace;
 }
 
 p.smallHeadingBrown{
@@ -114,12 +113,11 @@ p.smallHeadingBrown{
    letter-spacing: 2px;
    margin-bottom: 10px;
    margin-left: 16px;
-   font-family: 'Roboto', 'Open Sans', sans-serif;
-
+   font-family: monospace;
 }
 
 h1#goodThings{
-    color: rgb(255, 253, 248);
+    color: white;
     font-size: 55px;
    font-family: serif;
    margin: 0px 0px 0px 16px;
@@ -148,7 +146,7 @@ p.paragraph{
 }
 
 div#indexBanner p.paragraph{
-   color: rgb(255, 253, 248);
+   color: white;
     margin:0px 0px 50px 16px;
 }
 
@@ -190,7 +188,7 @@ div#indexBanner{
 }
 
 button#menuButton{
-   background-color: rgb(255, 253, 248);
+   background-color: white;
    color: rgb(42,70,56);
    padding: 12px 22px;
    border: 2px solid rgb(49, 91, 59);
@@ -206,9 +204,9 @@ button#menuButton{
 
 button#customButton{
    background-color: transparent;
-   color: rgb(255, 253, 248);
+   color: white;
    padding: 12px 22px;
-   border: 0.5px solid rgb(255, 253, 248);
+   border: 0.5px solid white;
    border-radius: 60px;
    font-family: 'Roboto', 'Open Sans', sans-serif;
    font-size: 15px;
@@ -223,10 +221,8 @@ div#indexOurStory{
    display: flex;
    flex-direction: row;
    justify-content:center;
-   margin-top: 0px;
-   padding-top: 60px;
-   padding-bottom: 60px;
-   gap: 10px;
+   margin-top: 80px;
+   gap: 60px;
 }
 
 div.ourStoryCols{
@@ -254,20 +250,19 @@ div#indexMeetTheTeam{
 
 div.meetTheTeamChild{
    flex: 1;
-   padding: 30px 30px 60px 30px;
+   padding: 30px;
    flex-direction: row;
    display: flex;
    gap: 60px;
-   
 }
 
-div#carter, div#emma{
+div#Carter, div#Emma{
    flex:1;
    padding: 30px;
    display: flex;
    flex-direction: column;
    align-items: left;
-   background-color: rgb(255, 253, 248);
+   background-color: white;
 }
 
 img.teamImages{
@@ -325,14 +320,14 @@ hr.line{
 footer span#title{
    font-family: 'Times New Roman', 'Times', serif;
    font-size: 20px;
-   color: rgb(255, 253, 248);
+   color: white;
    display: block;
 }
  
 footer p#subtitle{
   font-family: 'Courier', monospace;
    font-size: 15px;
-   color: rgb(255, 253, 248);
+   color: white;
    display: block;
    margin-left: 65px;
 }
@@ -355,7 +350,6 @@ p.yellowHeaders, yellowHeaders row{
 flex: 1 0 100%;
 font-size: 18px;
 font-family: 'Courier', monospace;
-font-weight: bold;
 color: rgb(212, 178, 108);
 margin-bottom: 5px;
 margin-left: 16px;
@@ -495,7 +489,7 @@ footer address#contactLinks :hover{
 
 .menuCategory th {
    background-color: #315b3b;
-   color: rgb(255, 253, 248);
+   color: white;
 }
 
 .menuCategory tbody tr:nth-child(even) {
@@ -515,7 +509,7 @@ footer address#contactLinks :hover{
 .menuLink {
    display: inline-block;
    background-color: #315b3b;
-   color: rgb(255, 253, 248);
+   color: white;
    padding: 12px 20px;
    border-radius: 5px;
    text-decoration: none;
@@ -606,9 +600,7 @@ flex: 1 0 100%;
 
 #customOrders h1,
 #customOrders h2,
-#customOrders h3, 
-div#emma,
-div#carter {
+#customOrders h3 {
    font-family:'Courier', monospace;
    line-height: 1.3;
 }
@@ -618,9 +610,7 @@ div#carter {
    color: rgb(49, 91, 59);
 }
 
-#customOrders h3, 
-div#emma,
-div#carter{
+#customOrders h3 {
    color: rgb(102, 120, 107);
 }
 
@@ -772,7 +762,7 @@ div#carter{
 }
 
 #customOrders .customFeatureContent h3,
-#customOrders .customTreatText h3{
+#customOrders .customTreatText h3 {
    font-size: 1.25rem;
    margin-top: 0;
    margin-bottom: 12px;
@@ -913,7 +903,7 @@ div#carter{
    padding: 11px 12px;
    border: 1px solid rgb(6, 166, 151);
    border-radius: 5px;
-   background-color: rgb(255, 253, 248);
+   background-color: white;
    color: rgb(45, 49, 44);
    font: inherit;
 }
