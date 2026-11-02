@@ -81,23 +81,26 @@ img.scLogo{
    margin: 0px;
 }
  
-/*BUTTON STYLES */
-/*base styles */
+
+
 /* INDEX Start an Order Button */
 button#startOrder{
    background-color: rgb(102, 120, 107);
    color: rgb(244, 239, 228);
-   border-color: rgb(250, 244, 233);
+   border-radius: 60px;
+   border: 2px solid rgb(250, 244, 233);
    height: 50px;
    width: 150px;
-  
+    font-family: 'Roboto', 'Open Sans', sans-serif;
    cursor:pointer;
-}
-
-
-
-
+   font-size: 15px;
+   font-weight: bold;
+   cursor: pointer;
+    
+   transition: background-color 0.2s ease,
+               color 0.2s ease;
   
+}
 
 
 /* HEADING AND TYPOGRAPHY STYLES */
@@ -260,16 +263,19 @@ div.meetTheTeamChild{
 
 div#Carter, div#Emma{
    flex:1;
-   padding: 30px;
    display: flex;
    flex-direction: column;
-   align-items: left;
-   background-color: rgb(255, 253, 248);
+   background-color: white;
 }
 
-img.teamImages{
+img.emmaImage{
    width: 100%;
-  
+
+ 
+}
+
+img.carterImage{
+   width: 40%;
 }
 
 
@@ -931,7 +937,8 @@ h2{
    }
 
    #customOrders .customSubmitButton,
-   #customOrders .customResetButton {
+   #customOrders .customResetButton,
+   button#startOrder{
       width: 100%;
    }
 }
@@ -941,13 +948,14 @@ h2{
 */
 
 @media only screen and (min-width: 641px) {
-   #customOrders #customHero {
+   #customOrders #customHero, div#indexBanner {
       grid-template-columns: 1fr 1fr;
       gap: 40px;
       padding-top: 60px;
       padding-bottom: 60px;
    }
 
+   
    #customOrders .customHeroImage {
       height: 400px;
    }
@@ -965,14 +973,6 @@ h2{
    }
 }
 
-
-/* =============================================
-   Tablet and Desktop Styles: greater than 720px
-   =============================================
-*/
-@media only screen and (min-width: 721px) {
-       
-}
 
 /* =============================================
    Tablet and Desktop Styles: greater than 1020px
