@@ -347,128 +347,433 @@ footer address#contactLinks :hover{
 }
 
  
+/* =============================================
+   OVERALL WEBSITE DESKTOP STYLES
+   ============================================= */
 
-/* MENU PAGE STYLES */
+@media only screen and (min-width: 1021px) {
+
+   /* HEADER AND NAVIGATION */
+
+   nav {
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      gap: 15px;
+   }
+
+   nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 15px;
+   }
+
+   nav ul li {
+      float: none;
+   }
+
+   nav ul li a {
+      padding: 14px 20px;
+      float: none;
+   }
+
+   /* HOMEPAGE BANNER */
+
+   div#indexBanner {
+      height: 650px;
+      padding-top: 1px;
+   }
+
+   /* OUR STORY SECTION */
+
+   div#indexOurStory {
+      padding: 45px 60px;
+   }
+
+   div#indexOurStory p {
+      max-width: 1000px;
+      line-height: 1.7;
+   }
+
+   /* MEET THE TEAM SECTION */
+
+   div#indexMeetTheTeam {
+      padding: 45px 60px;
+   }
+
+   /* INFORMATION SECTION */
+
+   div#indexInfoSection {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 35px 40px;
+   }
+
+   div#indexInfoSection h5,
+   div#indexInfoSection p {
+      flex: 1 1 30%;
+      text-align: center;
+      margin: 10px;
+   }
+
+   /* FOOTER */
+
+   footer {
+      padding: 35px 30px 15px;
+   }
+
+   #contacDivParent {
+      align-items: flex-start;
+      gap: 20px;
+   }
+
+   div.contactDivChild {
+      padding: 25px;
+      min-width: 0;
+   }
+
+}
+/* =============================================
+   MENU PAGE STYLES
+   ============================================= */
 
 #bakeryMenu {
-   max-width: 1100px;
+   max-width: 1200px;
    margin: 0 auto;
-   padding: 30px 20px;
+   padding: 40px 30px;
+   box-sizing: border-box;
 }
+
+/* Menu introduction */
 
 #menuIntro {
    text-align: center;
-   margin-bottom: 35px;
+   max-width: 750px;
+   margin: 0 auto 55px;
 }
 
-#bakeryMenu h1,
-#bakeryMenu h2 {
-   color: #315b3b;
+#menuIntro h1 {
+   font-family: 'Times New Roman', 'Times', serif;
+   font-size: 42px;
+   color: rgb(49, 91, 59);
+   margin-bottom: 15px;
 }
+
+#menuIntro p {
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(130, 105, 57);
+   line-height: 1.7;
+}
+
+/* Individual menu categories */
 
 .menuCategory {
-   margin-bottom: 40px;
+   margin-bottom: 55px;
 }
 
 .menuCategory h2 {
-   border-bottom: 2px solid #d5b96b;
-   padding-bottom: 10px;
+   font-family: 'Times New Roman', 'Times', serif;
+   font-size: 30px;
+   color: rgb(49, 91, 59);
+   border-bottom: 2px solid rgb(212, 178, 108);
+   padding-bottom: 12px;
+   margin-bottom: 25px;
 }
 
-.menuCategory table {
+/* Menu table and photo layout */
+
+.menuLayout {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+
+.menuTable {
+   flex: 1 1 60%;
+   min-width: 0;
+}
+
+.menuTable table {
    width: 100%;
    border-collapse: collapse;
-   background-color: #fffdf8;
+   background-color: rgb(255, 253, 248);
+   font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 .menuCategory th,
 .menuCategory td {
-   padding: 12px;
+   padding: 15px;
    text-align: left;
-   border-bottom: 1px solid #e5ddce;
+   border-bottom: 1px solid rgb(212, 178, 108);
+   line-height: 1.5;
 }
 
 .menuCategory th {
-   background-color: #315b3b;
-   color: white;
+   background-color: rgb(49, 91, 59);
+   color: rgb(255, 253, 248);
+   font-weight: bold;
+}
+
+.menuCategory tbody tr:nth-child(odd) {
+   background-color: rgb(255, 253, 248);
 }
 
 .menuCategory tbody tr:nth-child(even) {
-   background-color: #f5efe3;
+   background-color: rgb(250, 244, 233);
+}
+
+.menuCategory tbody tr:hover {
+   background-color: rgb(233, 221, 200);
 }
 
 .menuCategory td:last-child,
 .menuCategory th:last-child {
    white-space: nowrap;
+   text-align: right;
 }
+
+/* Menu photos */
+
+.menuPhoto {
+   flex: 0 1 38%;
+   width: 38%;
+   max-width: 380px;
+   height: 300px;
+   object-fit: cover;
+   border-radius: 0;
+   display: block;
+}
+
+/* Custom order section */
 
 #menuOrder {
    text-align: center;
-   padding: 25px 0;
+   background-color: rgb(233, 221, 200);
+   padding: 35px 25px;
+   margin-top: 50px;
+   border-radius: 10px;
+}
+
+#menuOrder h2 {
+   color: rgb(49, 91, 59);
+   font-family: 'Times New Roman', 'Times', serif;
+}
+
+#menuOrder p {
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   line-height: 1.6;
+   color: rgb(130, 105, 57);
 }
 
 .menuLink {
    display: inline-block;
-   background-color: #315b3b;
-   color: white;
-   padding: 12px 20px;
-   border-radius: 5px;
+   background-color: rgb(49, 91, 59);
+   color: rgb(255, 253, 248);
+   padding: 13px 24px;
+   border-radius: 30px;
    text-decoration: none;
    margin-top: 10px;
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   transition: background-color 0.2s ease;
 }
 
 .menuLink:hover {
-   background-color: #24452c;
+   background-color: rgb(102, 120, 107);
+}
+
+/* =============================================
+   BAKERY PHOTO GALLERY
+   ============================================= */
+
+#bakeryGallery {
+   max-width: 1200px;
+   margin: 50px auto;
+   padding: 30px;
+   text-align: center;
+   box-sizing: border-box;
+}
+
+#bakeryGallery h2 {
+   color: rgb(49, 91, 59);
+   font-family: 'Times New Roman', 'Times', serif;
+   font-size: 30px;
+   margin-bottom: 10px;
+}
+
+#bakeryGallery p {
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   color: rgb(130, 105, 57);
+   margin-bottom: 30px;
+   line-height: 1.6;
+}
+
+.galleryGrid {
+   display: grid;
+   grid-template-columns: repeat(5, minmax(0, 1fr));
+   gap: 15px;
+}
+
+.galleryGrid img {
+   width: 100%;
+   height: 190px;
+   object-fit: cover;
+   border-radius: 0;
+   display: block;
+   transition: transform 0.2s ease;
+}
+
+.galleryGrid img:hover {
+   transform: scale(1.03);
+}
+
+/* =============================================
+   RESPONSIVE MENU PAGE STYLES
+   ============================================= */
+
+/* Desktop screens */
+
+@media only screen and (min-width: 1021px) {
+
+   #bakeryMenu {
+      padding: 55px 40px;
+   }
+
+   .menuCategory {
+      margin-bottom: 65px;
+   }
+
+   .menuPhoto {
+      height: 320px;
+   }
+
+   #bakeryGallery {
+      padding: 45px 30px;
+   }
+}
+
+/* Tablet and smaller desktop screens */
+
+@media only screen and (min-width: 721px) and (max-width: 1020px) {
+
+   #bakeryMenu {
+      padding: 40px 25px;
+   }
+
+   .menuLayout {
+      gap: 20px;
+   }
+
+   .menuPhoto {
+      height: 260px;
+   }
+
+   .menuCategory th,
+   .menuCategory td {
+      padding: 11px;
+      font-size: 14px;
+   }
+
+   .galleryGrid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+   }
+}
+
+/* Smaller tablets */
+
+@media only screen and (min-width: 641px) and (max-width: 720px) {
+
+   .menuLayout {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 18px;
+   }
+
+   .menuLayout.reverse {
+      flex-direction: column-reverse;
+   }
+
+   .menuPhoto {
+      width: 100%;
+      max-width: none;
+      height: 250px;
+   }
+
+   .menuCategory th,
+   .menuCategory td {
+      padding: 9px 6px;
+      font-size: 13px;
+   }
+
+   .galleryGrid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+   }
+}
+
+/* Mobile screens */
+
+@media only screen and (max-width: 640px) {
+
+   #bakeryMenu {
+      padding: 30px 18px;
+   }
+
+   #menuIntro h1 {
+      font-size: 34px;
+   }
+
+   .menuCategory h2 {
+      font-size: 25px;
+   }
+
+   .menuLayout {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 18px;
+   }
+
+   /* Keeps the table before the photo on mobile */
+   .menuLayout.reverse {
+      flex-direction: column-reverse;
+   }
+
+   .menuPhoto {
+      width: 100%;
+      max-width: none;
+      height: 230px;
+   }
+
+   .menuCategory th,
+   .menuCategory td {
+      padding: 9px 6px;
+      font-size: 13px;
+   }
+
+   #menuOrder {
+      padding: 30px 18px;
+   }
+
+   #bakeryGallery {
+      padding: 25px 18px;
+      margin-top: 30px;
+   }
+
+   .galleryGrid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+   }
+
+   .galleryGrid img {
+      height: 150px;
+   }
 }
 
 /* PAGE FOOTER STYLES*/
  
 
- 
-
-
- 
- 
-
-
- 
-
- 
-
- 
- 
-/* =============================================
-   Tablet and Desktop Styles: greater than 510px
-   =============================================
-*/
-@media only screen and (min-width:511px) {
-
-}
- 
-/* =============================================
-   Tablet and Desktop Styles: greater than 640px
-   =============================================
-*/
-@media only screen and (min-width:641px) {
-
-}
- 
-/* =============================================
-   Tablet and Desktop Styles: greater than 720px
-   =============================================
-*/
-@media only screen and (min-width: 721px) {
-}
- 
-/* =============================================
-   Tablet and Desktop Styles: greater than 1020px
-   =============================================
-*/
-@media only screen and (min-width: 1021px) {
- 
-    
-
-}
 
 /* =============================================
    CUSTOM ORDERS PAGE STYLES
@@ -938,38 +1243,3 @@ footer address#contactLinks :hover{
 }
 
 
-/* =============================================
-   Tablet and Desktop Styles: greater than 510px
-   =============================================
-*/
-@media only screen and (min-width:511px) {
-   
-      
-   
-}
-
-/* =============================================
-   Tablet and Desktop Styles: greater than 640px
-   =============================================
-*/
-@media only screen and (min-width:641px) {
-      
-   
-}
-
-/* =============================================
-   Tablet and Desktop Styles: greater than 720px
-   =============================================
-*/
-@media only screen and (min-width: 721px) {
-       
-}
-
-/* =============================================
-   Tablet and Desktop Styles: greater than 1020px
-   =============================================
-*/
-@media only screen and (min-width: 1021px) {
-
-    
-}
