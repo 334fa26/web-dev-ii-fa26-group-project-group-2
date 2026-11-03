@@ -719,6 +719,11 @@ h2{
    margin-bottom: 5px;
 }
 
+.customOptionList li {
+   clear:both;
+   line-height: 1.2;
+}
+
 /* Cookies and dessert boxes */
 
 #customOrders .customTreatGrid {
