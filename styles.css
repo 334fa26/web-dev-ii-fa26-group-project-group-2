@@ -85,7 +85,7 @@ img.scLogo{
 
 /* INDEX Start an Order Button */
 button#startOrder{
-   background-color: rgb(102, 120, 107);
+   background-color: rgb(96, 112, 100);
    color: rgb(244, 239, 228);
    border-radius: 60px;
    border: 2px solid rgb(250, 244, 233);
@@ -361,7 +361,7 @@ footer{
 flex: 1 0 100%;
 font-size: 18px;
 font-family: 'Courier', monospace;
-color: rgb(212, 178, 108);
+color: rgb(49, 91, 59);
 margin-bottom: 5px;
 margin-left: 16px;
 }
@@ -411,7 +411,7 @@ footer p.smallSubtitle, footer span.smallTitle{
 
 p.info, address.info, a.info{
    font-family: 'Roboto', 'Open Sans', sans-serif;
-   color:rgb(147, 158, 145);
+   color:rgb(250, 244, 233);
    background-color:rgb(49, 91, 59);
    margin-left: 16px;
 }
@@ -575,7 +575,7 @@ h2{
 }
 
 #bakeryGallery p {
-    color: rgb(102, 120, 107);
+    color: rgb(96, 112, 100);
 }
 
 .galleryGrid {
