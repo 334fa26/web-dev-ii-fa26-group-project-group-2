@@ -361,7 +361,7 @@ footer{
 flex: 1 0 100%;
 font-size: 18px;
 font-family: 'Courier', monospace;
-color: rgb(49, 91, 59);
+color: rgb(250, 244, 233);
 margin-bottom: 5px;
 margin-left: 16px;
 }
@@ -372,6 +372,7 @@ div#indexBanner p{
 
 #faqHeader{
    flex: 1 0 50%;
+   color: rgb(250, 244, 233);
 }
 
 #faqDropBox{
