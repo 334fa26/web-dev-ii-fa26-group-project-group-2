@@ -528,9 +528,70 @@ h2{
 .menuLink:hover {
    background-color: rgb(36, 69, 44);
 }
+/* MENU IMAGE AND TEXT LAYOUT */
 
+.menuLayout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.8fr);
+    align-items: center;
+    gap: 35px;
+}
 
+.menuLayout.reverse {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.3fr);
+}
 
+.menuTable {
+    min-width: 0;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.menuCategory table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.menuPhoto {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: 280px;
+    object-fit: cover;
+    justify-self: center;
+}
+
+/* BAKERY PHOTO GALLERY */
+
+#bakeryGallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#bakeryGallery h2 {
+    color: rgb(49, 91, 59);
+}
+
+#bakeryGallery p {
+    color: rgb(102, 120, 107);
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.galleryGrid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+}
 
 /*CUSTOM PAGE STYLES */
 #customOrders {
@@ -1014,4 +1075,44 @@ h2{
    html {
       scroll-behavior: auto;
    }
+}
+/* MENU AND GALLERY RESPONSIVE STYLES */
+
+/* Mobile screens */
+@media only screen and (max-width: 640px) {
+
+    .menuLayout,
+    .menuLayout.reverse {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .menuPhoto {
+        max-width: 100%;
+        height: 220px;
+    }
+
+    .menuCategory th,
+    .menuCategory td {
+        padding: 8px 5px;
+        font-size: 13px;
+        overflow-wrap: break-word;
+    }
+
+    .galleryGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+}
+
+/* Tablet screens */
+@media only screen and (min-width: 641px) and (max-width: 1020px) {
+
+    .galleryGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .menuPhoto {
+        height: 240px;
+    }
 }
