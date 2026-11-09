@@ -83,25 +83,44 @@ img.scLogo{
  
 
 
-/* INDEX Start an Order Button */
-button#startOrder{
-   background-color: rgb(96, 112, 100);
-   color: rgb(244, 239, 228);
+/* index buttons */
+a#startOrder, a#menuButton, a#customButton{
+   text-decoration: none;
+   text-align: center;
    border-radius: 60px;
-   border: 2px solid rgb(250, 244, 233);
    height: 50px;
    width: 150px;
-    font-family: 'Roboto', 'Open Sans', sans-serif;
-   cursor:pointer;
+   font-family: 'Roboto', 'Open Sans', sans-serif;
    font-size: 15px;
    font-weight: bold;
    cursor: pointer;
-    
    transition: background-color 0.2s ease,
                color 0.2s ease;
-  
 }
 
+
+a#startOrder{
+   background-color: rgb(96, 112, 100);
+   color: rgb(244, 239, 228);
+   border: 2px solid rgb(250, 244, 233);
+
+}
+
+a#menuButton{
+   background-color:rgb(255, 253, 248);
+   color: rgb(49, 91, 59);
+   padding: 12px 22px;
+   border: 2px solid rgb(49, 91, 59);
+   margin: 0px 60px 0px 60px;
+}
+
+a#customButton{
+   background-color: transparent;
+   color:rgb(255, 253, 248);
+   padding: 12px 22px;
+   border: 0.5px solid rgb(255, 253, 248);
+   margin: 0px 60px 0px 0px;
+}
 
 /* HEADING AND TYPOGRAPHY STYLES */
 p.smallHeadingDefault{
@@ -190,37 +209,10 @@ div#indexBanner{
    background-position: center;
 }
 
-button#menuButton{
-   background-color:rgb(255, 253, 248);
-   color: rgb(49, 91, 59);
-   padding: 12px 22px;
-   border: 2px solid rgb(49, 91, 59);
-   border-radius: 60px;
-   font-family: 'Roboto', 'Open Sans', sans-serif;
-   font-size: 15px;
-   font-weight: bold;
-   cursor: pointer;
-   transition: background-color 0.2s ease,
-               color 0.2s ease;
-   margin: 0px 60px 0px 60px;
-}
 
 
 
-button#customButton{
-   background-color: transparent;
-   color:rgb(255, 253, 248);
-   padding: 12px 22px;
-   border: 0.5px solid rgb(255, 253, 248);
-   border-radius: 60px;
-   font-family: 'Roboto', 'Open Sans', sans-serif;
-   font-size: 15px;
-   font-weight: bold;
-   cursor: pointer;
-   transition: background-color 0.2s ease,
-               color 0.2s ease;
-   margin: 0px 60px 0px 0px;
-}
+
 
 div#indexOurStory{
    display: flex;
@@ -265,21 +257,28 @@ div#Carter, div#Emma{
    flex:1;
    display: flex;
    flex-direction: column;
-   background-color: white;
+   
+   
 }
 
 img.emmaImage{
    width: 100%;
-
+   height: 200px;
+   background-color: white;
+   padding: 10px 10px 60px 10px;
+    height: 250px;
  
 }
 
 img.carterImage{
    width: 40%;
+   background-color: white;
+   padding: 10px 10px 60px 10px;
+   height: 250px;
 }
 
 
-/*collabsible FAQ menu styling */
+\
 div#indexOurStory{
    background-color: rgb(255, 253, 248);
 }
@@ -379,7 +378,7 @@ div#indexBanner p{
    flex: 1 0 50%;
 }
 
-#contacDivParent{
+#contactDivParent{
    flex: 1 0 25%;
    flex-wrap: nowrap;
 
@@ -1005,7 +1004,7 @@ h2{
 
    #customOrders .customSubmitButton,
    #customOrders .customResetButton,
-   button#startOrder{
+   a#startOrder{
       width: 100%;
    }
 }
@@ -1038,6 +1037,49 @@ h2{
    #customOrders .customFormGrid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
    }
+   
+   nav{
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 40px;
+   }
+   nav ul{
+      margin: 0px;
+   
+   }
+   
+   #indexBanner {
+      padding: 100px 40px;
+   }
+   
+   .ourStoryCols{
+      flex: 1;
+   }
+   
+   #indexInfoSection{
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 30px;
+      margin: 40px auto;
+   }
+
+   
+   #faqHeader{
+      flex: 1;
+   }
+   
+   #faqDropBox{
+      flex: 1.5;
+   }
+   
+   #faqDropBox details p{
+      margin: 12px 0px 0px 0px;
+      font-size: 12px;
+      line-height: 1.5;
+   }
+   
+   
+   
 }
 
 
@@ -1104,8 +1146,91 @@ h2{
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
     }
-}
+   
+   a#startOrder{
+      width: 100%;
+   }
+   nav{
+      gap: 10px;
+      padding: 5px;
+   }
+   
+   nav ul{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 5px 0px 10px 0px;
+   }
+   
+   nav ul li a{
+      font-size: 12px;
+      padding: 4px 8px;
+   }
+   
+   div#indexBanner{
+      padding: 45px 15px;
+   }
+   
+   div#indexBanner h1{
+      font-size: 32px;
+   }
+   
+   #indexBanner a#menuButton,
+   #indexBanner a#customButton{
+      display: block;
+      padding: 5px 10px;  /* Enlarges the touch target area for easy tapping */
+    text-align: center;  /* Centers button labels */
+    font-size: 16px; 
+      margin: 0px 0px 5px 5px;
+   }
+   
+   img#firstLoaf{
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+   }
+   
+   
+   img#emmaImage, img#carterImage{
+      max-height: 250px;
+      width: 100%;
+      object-fit: cover;
+   }
+   
+   .row{
+      flex-direction: column;
+   }
+   
+   #faqHeader h2{
+   }
+   
+   #faqDropBox{
+      display: flex;
+      flex-direction: column;
+      margin-top: 0px;
+      margin-bottom: 25px;
+   }
+   
+   div#contactDivParent{
+      flex-direction: column;
+   }
+   
+   #faqDropBox details{
+      border: 1px solid;
+      border-radius: 6px;
+      
+   }
 
+   div.contactDivChild{
+      width: auto;
+      max-width: 85%;
+      flex-direction: column;
+      margin-top: 100px;
+      padding-top: 30px;
+   }
+   
+}
 /* Tablet screens */
 @media only screen and (min-width: 641px) and (max-width: 1020px) {
 
